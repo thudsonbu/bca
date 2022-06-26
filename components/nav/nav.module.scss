@@ -10,11 +10,13 @@
   align-items: center;
   z-index: 20;
   border-bottom: 2px solid $highlight;
+  background-color: $white;
 
   svg {
     color: $blue-mid;
     cursor: pointer;
     padding: .5em;
+    transition: all .2s ease-in-out;
 
     &:hover {
       color: $blue-dark;
@@ -31,7 +33,7 @@
     text-decoration: none;
     text-align: center;
     color: $blue-mid;
-    transition: opacity 0.1s ease-in-out;
+    transition: all .2s ease-in-out;
 
     &:hover {
       color: $blue-dark;

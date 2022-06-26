@@ -1,0 +1,34 @@
+@import '../../styles/colors.module.scss';
+
+.arrow_link {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  a {
+    text-decoration: none;
+    color: $blue-mid;
+    transition: all 0.2s ease-in-out;
+  }
+
+  &:hover a {
+    color: $blue-dark;
+  }
+
+  svg {
+    font-size: 1.2em;
+    margin-left: .25em;
+    margin-top: .1em;
+    color: $blue-mid;
+    transition: all 0.2s ease-in-out;
+  }
+
+  &:hover svg {
+    margin-left: .5em;
+    color: $blue-dark;
+  }
+}

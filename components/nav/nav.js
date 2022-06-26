@@ -6,7 +6,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 import { useEffect, useState } from 'react';
 
-const nav = ( props ) => {
+const Nav = ( props ) => {
   const [ mobile, setMobile ] = useState();
   const [ open, setOpen ]     = useState();
 
@@ -81,4 +81,4 @@ const nav = ( props ) => {
   );
 };
 
-export default nav;
+export default Nav;
