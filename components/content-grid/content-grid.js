@@ -6,9 +6,17 @@ const ContentGrid = ( props ) => {
   const sections = props.items.map( item => {
     return (
       <div className={styles.row}>
-        <img src={item.src}/>
+        <div
+          className={styles.image}
+          style={{
+            backgroundImage: 'url(' +  item.src + ')',
+            backgroundRepeat: 'no-repeat',
+            backgroundPosition: 'center',
+            backgroundSize: 'cover'
+          }}
+        ></div>
         <div className={styles.description}>
-          <h2>{item.title}</h2>
+          <h3>{item.title}</h3>
           <p>{item.description}</p>
           { item.link &&
             <ArrowLink href={item.link}>

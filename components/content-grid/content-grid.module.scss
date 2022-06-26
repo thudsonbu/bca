@@ -4,7 +4,7 @@
 .content_grid {
   display: flex;
   flex-wrap: wrap;
-  max-width: $max-width;
+  width: 100%;
   justify-content: center;
   align-items: center;
   margin-top: 2em;
@@ -15,14 +15,19 @@
       display: flex;
       flex: wrap;
       width: 100%;
+      height: fit-content;
 
       &:nth-child(odd) {
         flex-direction: row-reverse;
+
+        .description {
+          padding-left: 10%;
+          width: calc( 50% - ( 10% + 3em ) )
+        }
       }
 
-      img {
+      .image {
         width: 50%;
-        height: 20em;
       }
 
       a {
@@ -31,11 +36,16 @@
       }
 
       .description {
-        width: calc( 50% - 6em );
-        height: 14em;
+        width: calc( 50% - ( 10% + 3em ) );
+        padding-right: 10%;
         display: flex;
         flex-direction: column;
-        padding: 3em;
+        padding: 2em;
+
+        p {
+          margin-top: 1em;
+          font-size: .95em;
+        }
       }
     }
   }
@@ -47,6 +57,11 @@
       width: 80%;
       margin-top: 2em;
       margin-bottom: 2em;
+
+      .image {
+        width: 100%;
+        height: 12em;
+      }
     }
   }
 }
