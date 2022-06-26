@@ -14,14 +14,16 @@
     "react-hooks"
   ],
   "parserOptions": {
-    "ecmaVersion": "latest",
+    "ecmaVersion": 12,
     "sourceType": "module",
     "ecmaFeatures": {
-      "jsx": true
+      "jsx": true,
+      "modules": true
     }
   },
   "rules": {
     "react/react-in-jsx-scope": "off",
+    "linebreak-style": 0,
     "react/prop-types": "off",
     "react/jsx-filename-extension": [
       1,

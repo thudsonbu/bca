@@ -1,0 +1,55 @@
+@import '../../styles/colors.module.scss';
+@import '../../styles/globals.module.scss';
+
+.footer {
+  width: 100%;
+  background-color: $highlight;
+  position: fixed;
+  z-index: -5;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  @media( max-width: $mobile-width ) {
+    height: $mobile-footer-height;
+
+    .links {
+      display: flex;
+      width: 100%;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  @media ( min-width: $mobile-width ) {
+    height: $footer-height;
+  }
+
+  a {
+    text-decoration: none;
+    color: $blue-mid;
+    margin: 1em;
+    font-size: 1.25em;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      color: $blue-dark;
+    }
+  }
+
+  svg {
+    color: $blue-mid;
+    font-size: 1.75em;
+    margin: 1em;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      color: $blue-dark;
+      cursor: pointer;
+    }
+  }
+}

@@ -1,84 +1,96 @@
-import styles from './nav.module.scss';
-import Link from 'next/link';
-import items from './nav-items';
-import icons from './nav-icons';
-import MenuIcon from '@mui/icons-material/Menu';
-import CloseIcon from '@mui/icons-material/Close';
-import { useEffect, useState } from 'react';
+import styles from "./nav.module.scss";
+import Link from "next/link";
+import items from "./nav-items";
+import icons from "./nav-icons";
+import MenuIcon from "@mui/icons-material/Menu";
+import CloseIcon from "@mui/icons-material/Close";
+import { useEffect, useState } from "react";
 
-const nav = ( props ) => {
-  const [ mobile, setMobile ] = useState();
-  const [ open, setOpen ]     = useState();
+const Nav = () => {
+  const [mobile, setMobile] = useState();
+  const [open, setOpen] = useState();
+  const [hidden, setHidden] = useState(false);
 
-  useEffect( () => {
-    if ( window ) {
-      window.addEventListener( 'resize', e => {
-        setMobile( window.innerWidth < 768 );
-      })
-    };
+  // determine mobile or desktop nav style
+  useEffect(() => {
+    if (window) {
+      window.addEventListener("resize", () => {
+        setMobile(window.innerWidth < 768);
+      });
+    }
 
-    setTimeout( () => {
-      setMobile( window.innerWidth < 768 );
-    }, 10 );
-  }, [] );
+    setTimeout(() => {
+      setMobile(window.innerWidth < 768);
+    }, 10);
+  }, []);
 
-  const regular_links = items.map( item => {
+  // support navbar show and hide on scroll
+  useEffect(() => {
+    setTimeout(() => {
+      let scrollY = window.scrollY;
+
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > scrollY + 50) {
+          scrollY = window.scrollY;
+          setHidden(true);
+        }
+
+        if (window.scrollY < scrollY - 50) {
+          scrollY = window.scrollY;
+          setHidden(false);
+        }
+      });
+    }, 0);
+  }, []);
+
+  const regular_links = items.map((item) => {
     return (
-      <Link href={ item.link }>
-        { item.title }
+      <Link href={item.link} key={item.link}>
+        {item.title}
       </Link>
     );
   });
 
-  const icon_links = icons.map( item => {
+  const icon_links = icons.map((item) => {
     return (
-      <Link href={ item.link }>
-        <>
-          { item.icon }
-        </>
+      <Link href={item.link} key={item.link}>
+        <>{item.icon}</>
       </Link>
     );
   });
 
-  if ( mobile ) {
-    const drawer_styles = open ? styles.drawer + ' ' + styles.drawer_open :
-      styles.drawer;
+  if (mobile) {
+    const drawer_styles = open
+      ? styles.drawer + " " + styles.drawer_open
+      : styles.drawer;
+
+    const nav_classes = hidden
+      ? styles.nav_mobile + " " + styles.nav_hidden
+      : styles.nav_mobile;
 
     return (
-      <nav className={styles.nav_mobile}>
+      <nav className={nav_classes}>
         <h1>BCA</h1>
-        { !open &&
-          <MenuIcon
-            onClick={ () => setOpen( !open ) }
-          />
-        }
-        { open &&
-          <CloseIcon
-            onClick={ () => setOpen( !open ) }
-          />
-        }
+        {!open && <MenuIcon onClick={() => setOpen(!open)} />}
+        {open && <CloseIcon onClick={() => setOpen(!open)} />}
         <div className={drawer_styles}>
-          <div className={styles.links}>
-            { regular_links }
-          </div>
-          <div className={styles.icons}>
-            { icon_links }
-          </div>
+          <div className={styles.links}>{regular_links}</div>
+          <div className={styles.icons}>{icon_links}</div>
         </div>
       </nav>
     );
   }
 
+  const nav_classes = hidden
+    ? styles.nav + " " + styles.nav_hidden
+    : styles.nav;
+
   return (
-    <nav className={styles.nav}>
-      <div className={styles.link_container}>
-        { regular_links }
-      </div>
-      <div className={styles.icon_container}>
-        { icon_links }
-      </div>
+    <nav className={nav_classes}>
+      <div className={styles.link_container}>{regular_links}</div>
+      <div className={styles.icon_container}>{icon_links}</div>
     </nav>
   );
 };
 
-export default nav;
+export default Nav;
