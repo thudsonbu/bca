@@ -3,13 +3,10 @@ import Nav from '../nav/nav';
 import Footer from '../footer/footer';
 
 const Layout = ( props ) => {
-
   return (
     <div className={styles.layout}>
-      <Nav />
-      <page className={styles.page}>
-        {props.children}
-      </page>
+      <Nav/>
+      { props.children }
       <Footer />
     </div>
   );

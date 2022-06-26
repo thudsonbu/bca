@@ -2,7 +2,6 @@
 @import '../../styles/globals.module.scss';
 
 .footer {
-  height: $footer-height;
   width: 100%;
   background-color: $highlight;
   position: fixed;
@@ -12,6 +11,23 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  flex-wrap: wrap;
+
+  @media( max-width: $mobile-width ) {
+    height: $mobile-footer-height;
+
+    .links {
+      display: flex;
+      width: 100%;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  @media ( min-width: $mobile-width ) {
+    height: $footer-height;
+  }
 
   a {
     text-decoration: none;

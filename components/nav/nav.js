@@ -6,15 +6,17 @@ import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 import { useEffect, useState } from 'react';
 
-const Nav = ( props ) => {
+const Nav = () => {
   const [ mobile, setMobile ] = useState();
   const [ open, setOpen ]     = useState();
+  const [ hidden, setHidden ] = useState( false );
 
+  // determine mobile or desktop nav style
   useEffect( () => {
     if ( window ) {
-      window.addEventListener( 'resize', e => {
+      window.addEventListener( 'resize', () => {
         setMobile( window.innerWidth < 768 );
-      })
+      });
     };
 
     setTimeout( () => {
@@ -22,9 +24,29 @@ const Nav = ( props ) => {
     }, 10 );
   }, [] );
 
+
+  // support navbar show and hide on scroll
+  useEffect( () => {
+    setTimeout( () => {
+      let scrollY = window.scrollY;
+
+      window.addEventListener( 'scroll', () => {
+        if ( window.scrollY > scrollY + 50 ) {
+          scrollY = window.scrollY;
+          setHidden( true );
+        }
+
+        if ( window.scrollY < scrollY - 50 ) {
+          scrollY = window.scrollY;
+          setHidden( false );
+        }
+      });
+    }, 0 );
+  }, [] );
+
   const regular_links = items.map( item => {
     return (
-      <Link href={ item.link }>
+      <Link href={ item.link } key={ item.link }>
         { item.title }
       </Link>
     );
@@ -32,7 +54,7 @@ const Nav = ( props ) => {
 
   const icon_links = icons.map( item => {
     return (
-      <Link href={ item.link }>
+      <Link href={ item.link } key={ item.link }>
         <>
           { item.icon }
         </>
@@ -44,8 +66,11 @@ const Nav = ( props ) => {
     const drawer_styles = open ? styles.drawer + ' ' + styles.drawer_open :
       styles.drawer;
 
+    const nav_classes = hidden ? styles.nav_mobile + ' ' + styles.nav_hidden :
+      styles.nav_mobile;
+
     return (
-      <nav className={styles.nav_mobile}>
+      <nav className={nav_classes}>
         <h1>BCA</h1>
         { !open &&
           <MenuIcon
@@ -69,8 +94,11 @@ const Nav = ( props ) => {
     );
   }
 
+  const nav_classes = hidden ? styles.nav + ' ' + styles.nav_hidden :
+    styles.nav;
+
   return (
-    <nav className={styles.nav}>
+    <nav className={nav_classes}>
       <div className={styles.link_container}>
         { regular_links }
       </div>
