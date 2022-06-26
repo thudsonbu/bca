@@ -22,7 +22,7 @@ const nav = ( props ) => {
     }, 10 );
   }, [] );
 
-  const left_links = items.map( item => {
+  const regular_links = items.map( item => {
     return (
       <Link href={ item.link }>
         { item.title }
@@ -30,7 +30,7 @@ const nav = ( props ) => {
     );
   });
 
-  const right_links = icons.map( item => {
+  const icon_links = icons.map( item => {
     return (
       <Link href={ item.link }>
         <>
@@ -46,6 +46,7 @@ const nav = ( props ) => {
 
     return (
       <nav className={styles.nav_mobile}>
+        <h1>BCA</h1>
         { !open &&
           <MenuIcon
             onClick={ () => setOpen( !open ) }
@@ -57,7 +58,12 @@ const nav = ( props ) => {
           />
         }
         <div className={drawer_styles}>
-          { left_links }
+          <div className={styles.links}>
+            { regular_links }
+          </div>
+          <div className={styles.icons}>
+            { icon_links }
+          </div>
         </div>
       </nav>
     );
@@ -66,10 +72,10 @@ const nav = ( props ) => {
   return (
     <nav className={styles.nav}>
       <div className={styles.link_container}>
-        { left_links }
+        { regular_links }
       </div>
       <div className={styles.icon_container}>
-        { right_links }
+        { icon_links }
       </div>
     </nav>
   );
