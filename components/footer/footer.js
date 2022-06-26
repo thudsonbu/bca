@@ -3,11 +3,10 @@ import Link from 'next/link';
 import icons from '../nav/nav-icons';
 import items from '../nav/nav-items';
 
-const Footer = ( props ) => {
-
+const Footer = () => {
   const icon_links = icons.map( item => {
     return (
-      <Link href={ item.link }>
+      <Link href={ item.link } key={ item.link }>
         <>
           { item.icon }
         </>
@@ -17,7 +16,7 @@ const Footer = ( props ) => {
 
   const regular_links = items.map( item => {
     return (
-      <Link href={ item.link }>
+      <Link href={ item.link } key={ item.link }>
         { item.title }
       </Link>
     );
@@ -25,10 +24,10 @@ const Footer = ( props ) => {
 
   return (
     <div className={ styles.footer }>
-      <div>
+      <div className={ styles.links }>
         { regular_links }
       </div>
-      <div>
+      <div className={ styles.icons }>
         { icon_links }
       </div>
     </div>
