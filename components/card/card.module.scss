@@ -1,0 +1,15 @@
+@import "../../styles/colors.module.scss";
+
+.container {
+  width: 20em;
+  height: 5rem;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+}
+
+.container h1 {
+  font-size: 2em;
+  padding: 0;
+  margin: 0;
+}
