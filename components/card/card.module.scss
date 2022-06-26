@@ -1,11 +1,16 @@
 @import "../../styles/colors.module.scss";
 
 .container {
-  width: 20em;
-  height: 5rem;
-  border-radius: 5px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+}
+
+.imageContainer {
+  position: relative;
+  width: 8em;
+  height: 10em;
 }
 
 .container h1 {
