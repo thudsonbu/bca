@@ -2,7 +2,7 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 
 const icons = [
   {
-    icon: InstagramIcon,
+    icon: <InstagramIcon/>,
     link: 'https://instagram.com/'
   }
 ];
