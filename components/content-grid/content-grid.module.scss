@@ -1,0 +1,52 @@
+@import '../../styles/colors.module.scss';
+@import '../../styles/globals.module.scss';
+
+.content_grid {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: $max-width;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2em;
+  margin-bottom: 2em;
+
+  @media (min-width: $mobile-width) {
+    .row {
+      display: flex;
+      flex: wrap;
+      width: 100%;
+
+      &:nth-child(odd) {
+        flex-direction: row-reverse;
+      }
+
+      img {
+        width: 50%;
+        height: 20em;
+      }
+
+      a {
+        text-decoration: none;
+        color: $blue-dark;
+      }
+
+      .description {
+        width: calc( 50% - 6em );
+        height: 14em;
+        display: flex;
+        flex-direction: column;
+        padding: 3em;
+      }
+    }
+  }
+
+  @media (max-width: $mobile-width) {
+    .row {
+      display: flex;
+      flex-direction: column;
+      width: 80%;
+      margin-top: 2em;
+      margin-bottom: 2em;
+    }
+  }
+}
