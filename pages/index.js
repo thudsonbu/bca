@@ -1,4 +1,5 @@
 import Nav from '../components/nav/nav';
+import Layout from '../components/layout/layout';
 import Chip from '../components/chip/chip';
 import Jumbotron from '../components/jumbotron/jumbotron';
 import ContentGrid from '../components/content-grid/content-grid';
@@ -20,7 +21,7 @@ const content = [
 
 const Home = () => {
   return (
-    <div>
+    <Layout>
       <Nav />
       <Jumbotron />
       <div>
@@ -29,7 +30,7 @@ const Home = () => {
         <Chip title='Years Experience' number = '20'/>
       </div>
       <ContentGrid items={content} />
-    </div>
+    </Layout>
   );
 };
 
