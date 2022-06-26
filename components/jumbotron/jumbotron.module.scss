@@ -15,6 +15,7 @@
   color: white;
   margin: auto;
   margin-bottom: 0;
+  animation: fadeRight 1s ease-in-out;
 }
 
 .container p {
@@ -22,4 +23,25 @@
   color: white;
   margin: auto;
   margin-top: 1em;
+  animation: fadeLeft 1s ease-in-out
+}
+
+@keyframes fadeLeft {
+  from {
+    opacity: 0;
+    transform: translate(20%);
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+@keyframes fadeRight {
+  from {
+    opacity: 0;
+    transform: translate(-20%);
+  }
+  to {
+    opacity: 100%;
+  }
 }
