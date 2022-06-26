@@ -1,5 +1,11 @@
+import Nav from '../components/nav/nav';
+import Layout from '../components/layout/layout';
+import Card from "../components/card/card";
+import CardGroup from "../components/card-group/card-group"
 import Jumbotron from '../components/jumbotron/jumbotron';
 import ContentGrid from '../components/content-grid/content-grid';
+
+import styles from '../styles/home.module.scss'
 
 const content = [
   {
@@ -23,14 +29,24 @@ const content = [
   }
 ];
 
+
 const Home = () => {
   return (
     <div>
       <Jumbotron />
+      <div className={styles.stats}>
+        <Card />
+        <Card />
+        <Card />
+      </div>
+      <div>
+        <Chip title='Practice Areas' number = '7'/>
+        <Chip title='Annual Clients' number = '36'/>
+        <Chip title='Years Experience' number = '20'/>
+      </div>
       <ContentGrid items={content} />
     </div>
   );
 };
-
 
 export default Home;
