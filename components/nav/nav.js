@@ -5,11 +5,14 @@ import icons from './nav-icons';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 import { useEffect, useState } from 'react';
+import { useRouter } from 'next/router';
 
 const Nav = () => {
   const [ mobile, setMobile ] = useState();
   const [ open, setOpen ]     = useState();
   const [ hidden, setHidden ] = useState( false );
+
+  const router = useRouter();
 
   // determine mobile or desktop nav style
   useEffect( () => {
@@ -23,7 +26,6 @@ const Nav = () => {
       setMobile( window.innerWidth < 768 );
     }, 10 );
   }, [] );
-
 
   // support navbar show and hide on scroll
   useEffect( () => {
@@ -71,7 +73,16 @@ const Nav = () => {
 
     return (
       <nav className={nav_classes}>
-        <h1>BCA</h1>
+        <div
+          onClick={ () => router.push('/') }
+          className={styles.image}
+          style={{
+            backgroundImage: 'url( ../../images/Logo.png )',
+            backgroundRepeat: 'no-repeat',
+            backgroundPosition: 'center',
+            backgroundSize: 'cover'
+          }}
+        ></div>
         { !open &&
           <MenuIcon
             onClick={ () => setOpen( !open ) }
@@ -100,6 +111,16 @@ const Nav = () => {
   return (
     <nav className={nav_classes}>
       <div className={styles.link_container}>
+        <div
+          onClick={ () => router.push('/') }
+          className={styles.image}
+          style={{
+            backgroundImage: 'url( ../../images/Logo.png )',
+            backgroundRepeat: 'no-repeat',
+            backgroundPosition: 'center',
+            backgroundSize: 'cover'
+          }}
+        ></div>
         { regular_links }
       </div>
       <div className={styles.icon_container}>

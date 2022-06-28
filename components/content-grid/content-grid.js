@@ -5,7 +5,7 @@ const ContentGrid = ( props ) => {
 
   const sections = props.items.map( item => {
     return (
-      <div className={styles.row}>
+      <div className={styles.row} key={item.src}>
         <div
           className={styles.image}
           style={{
@@ -25,7 +25,7 @@ const ContentGrid = ( props ) => {
           }
         </div>
       </div>
-    )
+    );
   });
 
   return (

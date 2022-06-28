@@ -33,6 +33,13 @@
 .nav {
   @include nav_shared;
 
+  .image {
+    margin-left: .5em;
+    height: 2.75em;
+    width: 5em;
+    cursor: pointer;
+  }
+
   a {
     padding: 1em;
     height: 1.5em;
@@ -70,6 +77,13 @@
 
   svg {
     font-size: 2em;
+  }
+
+  .image {
+    margin-left: 1em;
+    height: 2.75em;
+    width: 5em;
+    cursor: pointer;
   }
 }
 
