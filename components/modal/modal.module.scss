@@ -1,0 +1,64 @@
+@import '../../styles/colors.module.scss';
+@import '../../styles/globals.module.scss';
+
+$width: 60em;
+$height: 30em;
+
+.container {
+  top: 0;
+  left: 0;
+  z-index: 50;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: $blue-dark;
+  opacity: 50%;
+}
+
+.modal {
+  z-index: 55;
+  position: fixed;
+  top: calc( 50vh - ( $height / 2 ) );
+  left: calc( 50vw - ( $width / 2 ) );
+  width: $width;
+  height: $height;
+  border: 1px solid black;
+  background-color: $white;
+  opacity: 100%;
+  display: flex;
+
+  .image {
+    width: calc($width * (2 / 5));
+    height: $height;
+  }
+
+  .description {
+    width: calc($width * (3 / 5) - 4em);
+    height: $height;
+    padding: 2em;
+    padding-top: 3em;
+
+    .title {
+      font-size: 1.2em;
+      font-style: italic;
+    }
+
+    .icons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      svg {
+        font-size: 2.2em;
+        margin: 0em .5em 0em .5em;
+        color: $blue-mid;
+        cursor: pointer;
+        transition: color 0.2s ease-in-out;
+
+        &:hover {
+          color: $blue-dark;
+        }
+      }
+    }
+  }
+}
