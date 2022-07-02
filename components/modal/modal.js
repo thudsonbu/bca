@@ -3,6 +3,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import EmailIcon from '@mui/icons-material/Email';
+import CloseIcon from '@mui/icons-material/Close';
 
 const Modal = ( props ) => {
   const [ open, setOpen ] = useState( true );
@@ -15,6 +16,10 @@ const Modal = ( props ) => {
           onClick={ () => setOpen( !open ) }
         ></div>
         <div className={styles.modal}>
+          <CloseIcon
+            className={styles.close_button}
+            onClick={ () => setOpen( false ) }
+          />
           <div
             className={styles.image}
             style={{

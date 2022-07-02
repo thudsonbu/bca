@@ -3,6 +3,8 @@
 
 $width: 60em;
 $height: 30em;
+$width-mobile: 95vw;
+$height-mobile: 95vh;
 
 .container {
   top: 0;
@@ -18,25 +20,29 @@ $height: 30em;
 .modal {
   z-index: 55;
   position: fixed;
-  top: calc( 50vh - ( $height / 2 ) );
-  left: calc( 50vw - ( $width / 2 ) );
-  width: $width;
-  height: $height;
-  border: 1px solid black;
   background-color: $white;
   opacity: 100%;
   display: flex;
 
-  .image {
-    width: calc($width * (2 / 5));
-    height: $height;
+  .close_button {
+    @media (min-width: $mobile-width) {
+      display: none;
+    }
+
+    position: absolute;
+    top: 3%;
+    left: 85%;
+    background: $blue-mid;
+    opacity: 80%;
+    border-radius: 50%;
+    font-size: 3em;
+    color: $white;
   }
 
   .description {
     width: calc($width * (3 / 5) - 4em);
     height: $height;
     padding: 2em;
-    padding-top: 3em;
 
     .title {
       font-size: 1.2em;
@@ -59,6 +65,47 @@ $height: 30em;
           color: $blue-dark;
         }
       }
+    }
+  }
+
+  @media screen and (min-width: $mobile-width) {
+    top: calc(50vh - ( $height / 2 ));
+    left: calc(50vw - ( $width / 2 ));
+    width: $width;
+    height: $height;
+
+    .image {
+      width: calc($width * (2 / 5));
+      height: $height;
+    }
+
+    .description {
+      padding-top: 3em;
+      width: calc($width * (3 / 5) - 4em);
+      height: $height;
+
+      .icons {
+        height: 7em;
+      }
+    }
+  }
+
+  @media screen and (max-width: $mobile-width) {
+    width: $width-mobile;
+    height: $height-mobile;
+    top: 2.5vh;
+    left: 2.5vw;
+    flex-direction: column;
+
+    .image {
+      width: $width-mobile;
+      height: calc($height-mobile / 2);
+    }
+
+    .description {
+      padding-top: 0;
+      width: calc($width-mobile - 4em);
+      height: calc($height-mobile / 2);
     }
   }
 }
