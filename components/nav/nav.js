@@ -77,7 +77,7 @@ const Nav = () => {
           onClick={ () => router.push('/') }
           className={styles.image}
           style={{
-            backgroundImage: 'url( ../../images/Logo.png )',
+            backgroundImage: 'url( ../../images/BCALogo.png )',
             backgroundRepeat: 'no-repeat',
             backgroundPosition: 'center',
             backgroundSize: 'cover'
@@ -115,7 +115,7 @@ const Nav = () => {
           onClick={ () => router.push('/') }
           className={styles.image}
           style={{
-            backgroundImage: 'url( ../../images/Logo.png )',
+            backgroundImage: 'url( ../../images/BCALogo.png )',
             backgroundRepeat: 'no-repeat',
             backgroundPosition: 'center',
             backgroundSize: 'cover'

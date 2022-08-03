@@ -8,7 +8,7 @@ const items = [
     link: '/research'
   },
   {
-    title: 'Client',
+    title: 'Clients',
     link: '/clients'
   },
   {

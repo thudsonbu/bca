@@ -1,9 +1,11 @@
+@import '../../styles/globals.module.scss';
+
 .card_container_one {
   display: grid;
   gap: 20px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: $mobile-width) {
   .card_container_two {
     display: grid;
     gap: 20px;
@@ -20,7 +22,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: $mobile-width) {
   .card_container_two {
     display: grid;
     grid-template-columns: repeat(2, 1fr);

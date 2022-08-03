@@ -10,6 +10,6 @@ export default function Jumbotron({ title, description }) {
 }
 
 Jumbotron.defaultProps = {
-  title: 'Bently Consulting Group',
-  description: 'Betle Consulting Group is the leader in innovative consulting!'
+  title: 'Bentley Consulting Association',
+  description: `Bentley's premier consulting organization.`
 };

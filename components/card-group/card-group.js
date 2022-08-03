@@ -1,9 +1,9 @@
-import styles from "./card-group.module.scss";
+import styles from './card-group.module.scss';
 
-export default function cardGroup({ children, columns, title }) {
+const CardGroup = ({ children, columns, title }) => {
   let styleByColumns;
 
-  switch (columns) {
+  switch ( columns ) {
     case 1:
       styleByColumns = styles.card_container_one;
       break;
@@ -27,4 +27,6 @@ export default function cardGroup({ children, columns, title }) {
       <div className={styleByColumns}>{children}</div>
     </div>
   );
-}
+};
+
+export default CardGroup;

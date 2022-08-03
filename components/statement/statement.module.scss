@@ -1,0 +1,29 @@
+@import '../../styles/colors.module.scss';
+@import '../../styles/globals.module.scss';
+
+.container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background-color: $white;
+  justify-content: center;
+  align-content: center;
+
+  .image_container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 100%;
+    padding: 4em;
+
+    .image {
+      height: 18em;
+      width: 18em;
+    }
+  }
+
+  .content {
+    max-width: 45em;
+    padding: 3em 3em 3em 0em;
+  }
+}
