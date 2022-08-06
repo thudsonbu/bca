@@ -1,29 +1,63 @@
 @import '../../styles/colors.module.scss';
 @import '../../styles/globals.module.scss';
 
-.container {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  background-color: $white;
-  justify-content: center;
-  align-content: center;
-
-  .image_container {
+@media (min-width: $mobile-width) {
+  .container {
     display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: $white;
     justify-content: center;
     align-content: center;
-    height: 100%;
-    padding: 4em;
 
-    .image {
-      height: 18em;
-      width: 18em;
+    .image_container {
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      height: 100%;
+      padding: 4em;
+
+      .image {
+        height: 18em;
+        width: 18em;
+      }
+    }
+
+    .content {
+      max-width: 45em;
+      padding: 3em 3em 3em 0em;
     }
   }
+}
 
-  .content {
-    max-width: 45em;
-    padding: 3em 3em 3em 0em;
+@media (max-width: $mobile-width) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    background-color: $white;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2em;
+    margin-top: 2em;
+
+    .image_container {
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      height: 100%;
+      width: 80%;
+      padding: 0em;
+
+      .image {
+        height: 18em;
+        width: 18em;
+      }
+    }
+
+    .content {
+      max-width: 45em;
+      padding: 0;
+      width: 80%;
+    }
   }
 }

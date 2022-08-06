@@ -1,0 +1,21 @@
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .content {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .partner {
+      width: clamp( 100px, 200px, 400px );
+      height: clamp( 100px, 200px, 400px );
+      margin: 2em;
+    }
+  }
+}

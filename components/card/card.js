@@ -1,11 +1,11 @@
-import styles from "./card.module.scss";
-import Image from "next/image";
-import placeholder from "../../public/868690.png";
+import styles from './card.module.scss';
+import Image from 'next/image';
+import placeholder from '../../public/868690.png';
 
-export default function Card({ title, description, img }) {
+export default function Card({ title, description, src }) {
   return (
     <div className={styles.container}>
-      {img && (
+      {src && (
         <div className={styles.imageContainer}>
           <Image layout="fill" src={placeholder} />
         </div>
@@ -17,5 +17,5 @@ export default function Card({ title, description, img }) {
 }
 
 Card.defaultProps = {
-  title: "People Helped",
+  title: 'People Helped'
 };

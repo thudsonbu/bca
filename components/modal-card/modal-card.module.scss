@@ -1,6 +1,4 @@
-.modal_card_container {
-  position: relative;
-}
+@import '../../styles/colors.module.scss';
 
 .modal_card {
   width: 33%;
@@ -17,14 +15,23 @@
   }
 }
 
-.modal {
-  width: 33%;
-  max-width: 20em;
-  padding: 1em;
-  position: absolute;
+.modal_background {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-  .image {
-    height: 10rem;
-    width: 100%;
+  .modal {
+    width: 33%;
+    max-width: 20em;
+    padding: 1em;
+
+    .image {
+      height: 10em;
+      width: 10em;
+      background: $blue-dark;
+    }
   }
 }

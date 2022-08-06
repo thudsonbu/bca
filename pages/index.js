@@ -1,7 +1,10 @@
-import Jumbotron    from '../components/jumbotron/jumbotron';
-import Statement    from '../components/statement/statement';
+import Jumbotron from '../components/jumbotron/jumbotron';
+import Statement from '../components/statement/statement';
 import SectionTitle from '../components/section-title/section-title';
-import ContentGrid  from '../components/content-grid/content-grid';
+import ContentGrid from '../components/content-grid/content-grid';
+import Partners from '../components/partners/partners';
+import CardGroup from '../components/card-group/card-group';
+import Card from '../components/card-group/card-group';
 
 const Home = () => {
   return (
@@ -42,7 +45,27 @@ const Home = () => {
       <SectionTitle
         title={'Our Partners'}
       />
-      <Card />
+      <Partners
+        partners={[
+          { src: './images/deloitte.png' },
+          { src: './images/ey.jpeg' },
+          { src: './images/massaro.png' },
+          { src: './images/pwc.png' },
+          { src: './images/rsm.jpg' }
+        ]}
+      />
+      <SectionTitle
+        title={'Learn More'}
+      />
+      <CardGroup
+        columns={3}
+      >
+        <Card
+          title={'Card 1'}
+          description={'As both a Bootcamp Participant and an Associate Consultant, members have the opportunity to work with real life businesses to complete probono consulting projects. These engagements allow our members to apply skills taught by BCA and expand their knowledge in a variety of business segments.'}
+          src={'./images/team.jpg'}
+        />
+      </CardGroup>
     </>
   );
 };
