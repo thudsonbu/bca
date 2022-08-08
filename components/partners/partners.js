@@ -5,7 +5,7 @@ const Partners = ( props ) => {
     return (
       <div
         key={partner.src}
-        className={styles.partner}
+        className={ styles[ partner.style ] }
         style={{
           backgroundImage: 'url(' +  partner.src + ')',
           backgroundRepeat: 'no-repeat',

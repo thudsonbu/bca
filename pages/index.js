@@ -47,11 +47,13 @@ const Home = () => {
       />
       <Partners
         partners={[
-          { src: './images/deloitte.png' },
-          { src: './images/ey.jpeg' },
-          { src: './images/massaro.png' },
-          { src: './images/pwc.png' },
-          { src: './images/rsm.jpg' }
+          { src: './images/slalom.png', style: 'slalom' },
+          { src: './images/massaro.webp', style: 'massaro' },
+          { src: './images/rsm.png', style: 'rsm' },
+          { src: './images/deloitte.png', style: 'deloitte' },
+          { src: './images/ey.png', style: 'ey' },
+          { src: './images/pwc.png', style: 'pwc' }
+
         ]}
       />
       <SectionTitle

@@ -8,14 +8,46 @@
   .content {
     display: flex;
     width: 100%;
+    max-width: 1200px;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
+    margin-bottom: 2em;
+    margin-top: 2em;
 
-    .partner {
-      width: clamp( 100px, 200px, 400px );
-      height: clamp( 100px, 200px, 400px );
+    .massaro {
+      width: clamp( 75px, 300px, 400px );
+      height: clamp( 50px, 75px, 150px );
       margin: 2em;
+    }
+
+    .slalom {
+      width: clamp( 75px, 300px, 400px );
+      height: clamp( 50px, 75px, 150px );
+      margin: 2em;
+    }
+
+    .deloitte {
+      width: clamp( 75px, 300px, 400px );
+      height: clamp( 50px, 75px, 150px );
+      margin: 2em;
+    }
+
+    .rsm {
+      width: clamp( 75px, 250px, 400px );
+      height: clamp( 50px, 100px, 150px );
+      margin: 2em;
+    }
+
+    .ey {
+      width: clamp( 75px, 250px, 350px );
+      height: clamp( 50px, 125px, 150px );
+      margin: 2em;
+    }
+
+    .pwc {
+      width: clamp( 150px, 220px, 400px );
+      height: clamp( 150px, 220px, 400px );
     }
   }
 }
