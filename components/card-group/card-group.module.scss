@@ -1,5 +1,9 @@
 @import '../../styles/globals.module.scss';
 
+.container {
+  margin: 5em
+}
+
 .card_container_one {
   display: grid;
   gap: 20px;
