@@ -1,19 +1,15 @@
 const items = [
   {
-    title: 'Practice Areas',
-    link: '/practice-areas'
+    title: 'Our Team',
+    link: '/team'
   },
   {
-    title: 'Research',
-    link: '/research'
+    title: 'Events',
+    link: '/events'
   },
   {
-    title: 'Clients',
-    link: '/clients'
-  },
-  {
-    title: 'Students',
-    link: '/students'
+    title: 'Contact Us',
+    link: '/contact-us'
   }
 ];
 

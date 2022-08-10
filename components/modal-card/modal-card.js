@@ -13,7 +13,7 @@ const ModalCard = ( props ) => {
         <div
           className={ styles.image }
           style={{
-            backgroundImage: 'url(' +  '../../banana.jpeg' + ')',
+            backgroundImage: 'url(' + props.src + ')',
             backgroundRepeat: 'no-repeat',
             backgroundPosition: 'center',
             backgroundSize: 'cover'
