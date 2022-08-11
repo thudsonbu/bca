@@ -8,17 +8,17 @@
 @media (max-width: $mobile-width) {
   .card_container_two {
     display: grid;
-    gap: 20px;
+    gap: 1em;
   }
 
   .card_container_three {
     display: grid;
-    gap: 20px;
+    gap: 1em;
   }
 
   .card_container_four {
     display: grid;
-    gap: 20px;
+    gap: 1em;
   }
 }
 
@@ -26,18 +26,18 @@
   .card_container_two {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    gap: 1em;
   }
 
   .card_container_three {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    gap: 1em;
   }
 
   .card_container_four {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
+    gap: 1em;
   }
 }
