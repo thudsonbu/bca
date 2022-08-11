@@ -1,56 +1,42 @@
-import styles       from './modal-card.module.scss';
+import styles from './modal-card.module.scss';
 import { useState } from 'react';
+import Modal from '../modal/modal';
 
 const ModalCard = ( props ) => {
   const [ open, setOpen ] = useState();
 
   return (
-    <div className={styles.modal_card_container}>
+    <div className={styles.container}>
       <div
-        className={styles.modal_card}
-        onClick={ () => setOpen( true ) }
+        className={styles.content}
+        onClick={ () => setOpen( !open ) }
       >
         <div
           className={ styles.image }
           style={{
-            backgroundImage: 'url(' +  '../../banana.jpeg' + ')',
+            backgroundImage: 'url(' + props.src + ')',
             backgroundRepeat: 'no-repeat',
             backgroundPosition: 'center',
             backgroundSize: 'cover'
           }}
         >
         </div>
-        <div>
-          { props.title &&
-            <h3>{ props.title}</h3>
-          }
-          { props.description &&
-            <p>{ props.description}</p>
-          }
+        <div className={ styles.description }>
+          <h3>{ props.name }</h3>
+          <div className={ styles.rule }></div>
+          <p>{ props.title }</p>
         </div>
       </div>
-      { open &&
-          <div className={ styles.modal_background }>
-            <div
-              className={ styles.modal }
-              onClick={ () => setOpen( false ) }
-            >
-              <div
-                className={ styles.image }
-                style={{
-                  backgroundImage: 'url(' +  '../../banana.jpeg' + ')',
-                  backgroundRepeat: 'no-repeat',
-                  backgroundPosition: 'center',
-                  backgroundSize: 'cover'
-                }}
-              ></div>
-              <div>
-                <h3>{ props.title || 'title' }</h3>
-                <p>{ props.description || 'description' }</p>
-              </div>
-            </div>
-          </div>
-      }
+      <Modal
+        name={ props.name }
+        title={ props.title }
+        description={ props.description }
+        linkedinLink={ props.linkedinLink }
+        src={ props.src }
+        emailLink={ props.emailLink }
+        setOpen={setOpen}
+        open={open}
+      />
     </div>
   );
 };

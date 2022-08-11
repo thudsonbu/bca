@@ -40,7 +40,7 @@ $height-mobile: 95vh;
   }
 
   .description {
-    width: calc($width * (3 / 5) - 4em);
+    width: calc($width * (4 / 5) - 4em);
     height: $height;
     padding: 2em;
 
@@ -76,13 +76,14 @@ $height-mobile: 95vh;
 
     .image {
       width: calc($width * (2 / 5));
-      height: $height;
+      height: 100%;
     }
 
     .description {
-      padding-top: 3em;
-      width: calc($width * (3 / 5) - 4em);
+      padding-top: 1em;
+      width: calc($width * (4 / 5) - 4em);
       height: $height;
+      font-size: .95em;
 
       .icons {
         height: 7em;
@@ -106,6 +107,7 @@ $height-mobile: 95vh;
       padding-top: 0;
       width: calc($width-mobile - 4em);
       height: calc($height-mobile / 2);
+      overflow: scroll;
     }
   }
 }
