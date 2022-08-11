@@ -4,7 +4,7 @@ import SectionTitle from '../components/section-title/section-title';
 import ContentGrid from '../components/content-grid/content-grid';
 import Partners from '../components/partners/partners';
 import CardGroup from '../components/card-group/card-group';
-import Card from '../components/card-group/card-group';
+import Card from '../components/card/card';
 
 const Home = () => {
   return (
@@ -64,6 +64,21 @@ const Home = () => {
       >
         <Card
           title={'Card 1'}
+          description={'As both a Bootcamp Participant and an Associate Consultant, members have the opportunity to work with real life businesses to complete probono consulting projects. These engagements allow our members to apply skills taught by BCA and expand their knowledge in a variety of business segments.'}
+          src={'./images/team.jpg'}
+        />
+        <Card
+          title={'Card 2'}
+          description={'As both a Bootcamp Participant and an Associate Consultant, members have the opportunity to work with real life businesses to complete probono consulting projects. These engagements allow our members to apply skills taught by BCA and expand their knowledge in a variety of business segments.'}
+          src={'./banana.jpeg'}
+        />
+        <Card
+          title={'Card 3'}
+          description={'As both a Bootcamp Participant and an Associate Consultant, members have the opportunity to work with real life businesses to complete probono consulting projects. These engagements allow our members to apply skills taught by BCA and expand their knowledge in a variety of business segments.'}
+          src={'./images/team.jpg'}
+        />
+                <Card
+          title={'Card 4'}
           description={'As both a Bootcamp Participant and an Associate Consultant, members have the opportunity to work with real life businesses to complete probono consulting projects. These engagements allow our members to apply skills taught by BCA and expand their knowledge in a variety of business segments.'}
           src={'./images/team.jpg'}
         />

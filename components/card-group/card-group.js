@@ -22,7 +22,7 @@ const CardGroup = ({ children, columns, title }) => {
   }
 
   return (
-    <div>
+    <div className={styles.container}>
       <h1>{title}</h1>
       <div className={styleByColumns}>{children}</div>
     </div>

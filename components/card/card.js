@@ -7,7 +7,15 @@ export default function Card({ title, description, src }) {
     <div className={styles.container}>
       {src && (
         <div className={styles.imageContainer}>
-          <Image layout="fill" src={placeholder} />
+          <div
+            className={styles.image}
+            style={{
+              backgroundImage: 'url(' +  src + ')',
+              backgroundRepeat: 'no-repeat',
+              backgroundPosition: 'center',
+              backgroundSize: 'cover'
+            }}
+          ></div>
         </div>
       )}
       <h1>{title}</h1>
