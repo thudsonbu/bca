@@ -7,7 +7,7 @@ export default function Card({ title, description, src }) {
     <div className={styles.container}>
       {src && (
         <div className={styles.imageContainer}>
-          <Image layout="fill" src={placeholder} />
+          <img layout="fill" src={src} />
         </div>
       )}
       <h1>{title}</h1>

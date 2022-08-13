@@ -7,6 +7,12 @@
   opacity: 0;
 }
 
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
 @keyframes statsFadeUp {
   from {
     opacity: 0;

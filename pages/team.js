@@ -1,7 +1,8 @@
 import Jumbotron from '../components/jumbotron/jumbotron';
 import CardGrid from '../components/card-grid/card-grid';
 import ModalCard from '../components/modal-card/modal-card';
-import SectionTitle from '../components/section-title/section-title';
+import SectionTitle from '../components/group-title/group-title';
+import SectionSubtitle from '../components/section-subtitle/section-subtitle';
 import styles from '../styles/team.module.scss';
 
 const Team = () => {
@@ -13,7 +14,7 @@ const Team = () => {
       />
       <div className={ styles.card_grid }>
         <CardGrid className={ styles.card_grid }>
-          <SectionTitle title={'Presidents'} />
+          <SectionTitle title={'Executive Board'} />
           <ModalCard
             name={'Brenna Masterson'}
             src="./images/headshots/brenna_masterson.jpg"
@@ -30,9 +31,6 @@ const Team = () => {
             linkedinLink={'starry.com'}
             emailLink={'email.com'}
           />
-        </CardGrid>
-        <CardGrid className={ styles.card_grid }>
-          <SectionTitle title={'Executive Board'} />
           <ModalCard
             name={'Maria Campbell'}
             src="./images/headshots/celia_schurman.jfif"
@@ -74,6 +72,7 @@ const Team = () => {
             emailLink={'email.com'}
           />
         </CardGrid>
+        <SectionSubtitle />
       </div>
     </>
   );

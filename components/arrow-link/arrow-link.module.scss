@@ -32,3 +32,22 @@
     color: $blue-dark;
   }
 }
+
+.white {
+  a {
+    color: $white;
+    transition: all 0.2s ease-in-out;
+  }
+
+  &:hover a {
+    color: $grey;
+  }
+
+  svg {
+    color: $white;
+  }
+
+  &:hover svg {
+    color: $grey;
+  }
+}

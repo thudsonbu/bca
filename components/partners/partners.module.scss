@@ -1,4 +1,5 @@
 @import "../../styles/globals.module.scss";
+@import "../../styles/colors.module.scss";
 
 .container {
   width: 100%;
@@ -13,8 +14,6 @@
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    margin-bottom: 5em;
-    margin-top: 5em;
 
     .massaro {
       width: clamp( 75px, 300px, 400px );

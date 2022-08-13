@@ -1,10 +1,11 @@
 import Jumbotron from '../components/jumbotron/jumbotron';
 import Statement from '../components/statement/statement';
 import SectionTitle from '../components/section-title/section-title';
+import SectionSubtitle from '../components/section-subtitle/section-subtitle';
 import ContentGrid from '../components/content-grid/content-grid';
 import Partners from '../components/partners/partners';
-import CardGroup from '../components/card-group/card-group';
-import Card from '../components/card-group/card-group';
+import ImageCard from '../components/image-card/image-card';
+import styles from '../styles/home.module.scss';
 
 const Home = () => {
   return (
@@ -55,22 +56,47 @@ const Home = () => {
           { src: './images/deloitte.png', style: 'deloitte' },
           { src: './images/ey.png', style: 'ey' },
           { src: './images/pwc.png', style: 'pwc' }
-
         ]}
       />
       <SectionTitle
         title={'Learn More'}
         background={'blue'}
       />
-      <CardGroup
-        columns={3}
-      >
-        <Card
-          title={'Card 1'}
-          description={'As both a Bootcamp Participant and an Associate Consultant, members have the opportunity to work with real life businesses to complete probono consulting projects. These engagements allow our members to apply skills taught by BCA and expand their knowledge in a variety of business segments.'}
+      <SectionSubtitle title={'Meet our team or see our upcoming events'}/>
+      <div className={styles.flex}>
+        <ImageCard
+          title={'Our Team'}
+          description={'Meet our executive board and consultants or reach out directly.'}
           src={'./images/team.jpg'}
+          href={'./team'}
         />
-      </CardGroup>
+        <ImageCard
+          title={'Events'}
+          description={'See what events the BCA has planned this semester'}
+          src={'./images/events.jpg'}
+          href={'./events'}
+        />
+      </div>
+      <SectionSubtitle title={'Reach out to us'} />
+      <ContentGrid
+        items={[
+          {
+            src: './images/education.jpg',
+            title: 'Join the Bentley Consulting Association',
+            description: 'Joining the BCA is a great way to get started in consulting. Follow the link below to get started.',
+            link: './team',
+            link_text: 'Sign Up'
+          },
+          {
+            src: './images/charts.jpg',
+            title: 'Contact Us',
+            description: 'Would you like to work with the BCA or schedule en event? Click the link below.',
+            link: './team',
+            link_text: 'Contact Us'
+          }
+        ]}
+      />
+      <SectionSubtitle />
     </>
   );
 };

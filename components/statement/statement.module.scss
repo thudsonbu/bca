@@ -25,6 +25,10 @@
     .content {
       max-width: 45em;
       padding: 3em 3em 3em 0em;
+
+      h1 {
+        color: $blue-dark;
+      }
     }
   }
 }
