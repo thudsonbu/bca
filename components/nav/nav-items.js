@@ -1,5 +1,9 @@
 const items = [
   {
+    title: 'About',
+    link: '/'
+  },
+  {
     title: 'Our Team',
     link: '/team'
   },

@@ -1,19 +1,21 @@
-@import "../../styles/colors.module.scss";
 @import "../../styles/globals.module.scss";
+@import "../../styles/colors.module.scss";
 
 .container {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: $white;
+  padding-top: 2em;
+  padding-bottom: 2em;
 
   .content {
-    display: flex;
-    justify-content: center;
-    align-items: stretch;
-    flex-wrap: wrap;
+    width: 80%;
     max-width: $max-width;
-    gap: .5em;
-    padding: 1em;
+
+    h1 {
+      color: $blue-dark;
+    }
   }
 }

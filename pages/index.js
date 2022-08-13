@@ -17,6 +17,7 @@ const Home = () => {
       />
       <SectionTitle
         title={'What We Do'}
+        background={'blue'}
       />
       <ContentGrid
         items={[
@@ -44,6 +45,7 @@ const Home = () => {
       />
       <SectionTitle
         title={'Our Partners'}
+        background={'blue'}
       />
       <Partners
         partners={[
@@ -58,6 +60,7 @@ const Home = () => {
       />
       <SectionTitle
         title={'Learn More'}
+        background={'blue'}
       />
       <CardGroup
         columns={3}
