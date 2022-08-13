@@ -46,6 +46,18 @@ const Nav = () => {
     }, 0 );
   }, [] );
 
+  useEffect( () => {
+    if ( open ) {
+      setTimeout( () => {
+        document.body.style.overflow = 'hidden';
+      });
+    } else {
+      setTimeout( () => {
+        document.body.style.overflow = 'scroll';
+      });
+    }
+  }, [ open ] );
+
   const regular_links = items.map( ( item ) => {
     return (
       <div onClick={() => setOpen( false )} key={item.link}>
