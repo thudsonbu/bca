@@ -13,8 +13,8 @@ const Team = () => {
         description={'Meet our leadership and consultants.'}
       />
       <div className={ styles.card_grid }>
+        <SectionTitle title={'Executive Board'} />
         <CardGrid className={ styles.card_grid }>
-          <SectionTitle title={'Executive Board'} />
           <ModalCard
             name={'Brenna Masterson'}
             src="./images/headshots/brenna_masterson.jpg"

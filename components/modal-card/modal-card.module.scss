@@ -2,7 +2,7 @@
 
 .container {
   background: $white;
-  width: 19.5em;
+  width: 28%;
   min-width: 15em;
   display: flex;
   justify-content: center;
@@ -23,8 +23,8 @@
     padding: 2.5em;
 
     .image {
-      height: 17em;
-      width: 17em;
+      height: 16em;
+      width: 16em;
       border-radius: 50%;
     }
 
@@ -51,7 +51,6 @@
     }
   }
 }
-
 
 .modal_background {
   position: fixed;

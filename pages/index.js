@@ -51,7 +51,6 @@ const Home = () => {
       <Partners
         partners={[
           { src: './images/slalom.png', style: 'slalom' },
-          { src: './images/massaro.webp', style: 'massaro' },
           { src: './images/rsm.png', style: 'rsm' },
           { src: './images/deloitte.png', style: 'deloitte' },
           { src: './images/ey.png', style: 'ey' },

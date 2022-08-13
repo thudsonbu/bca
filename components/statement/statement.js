@@ -1,8 +1,10 @@
 import styles from './statement.module.scss';
 
 const Statement = ( props ) => {
+  const sty = props.reverse ? styles.container + ' ' + styles.reverse : styles.container;
+
   return (
-    <div className={styles.container}>
+    <div className={sty}>
       { props.src &&
         <div className={styles.image_container}>
           <div

@@ -12,8 +12,12 @@ const items = [
     link: '/events'
   },
   {
-    title: 'Contact Us',
-    link: '/contact-us'
+    title: 'Students',
+    link: '/students'
+  },
+  {
+    title: 'Clients',
+    link: '/clients'
   }
 ];
 

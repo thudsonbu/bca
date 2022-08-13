@@ -53,7 +53,7 @@ const Nav = () => {
       });
     } else {
       setTimeout( () => {
-        document.body.style.overflow = 'scroll';
+        document.body.style['overflow-y'] = 'scroll';
       });
     }
   }, [ open ] );

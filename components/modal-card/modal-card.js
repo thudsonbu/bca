@@ -12,11 +12,10 @@ const ModalCard = ( props ) => {
       });
     } else {
       setTimeout( () => {
-        document.body.style.overflow = 'scroll';
+        document.body.style['overflow-y'] = 'scroll';
       });
     }
   }, [ open ] );
-
 
   return (
     <div className={styles.container}>
