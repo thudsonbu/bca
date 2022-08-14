@@ -16,7 +16,6 @@ export default function Card({ title, description, src }) {
               backgroundSize: 'cover'
             }}
           ></div>
-        </div>
       )}
       <h1>{title}</h1>
       {description && <p>{description}</p>}

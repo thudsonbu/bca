@@ -1,5 +1,9 @@
 const items = [
   {
+    title: 'About',
+    link: '/'
+  },
+  {
     title: 'Our Team',
     link: '/team'
   },
@@ -8,8 +12,12 @@ const items = [
     link: '/events'
   },
   {
-    title: 'Contact Us',
-    link: '/contact-us'
+    title: 'Students',
+    link: '/students'
+  },
+  {
+    title: 'Clients',
+    link: '/clients'
   }
 ];
 

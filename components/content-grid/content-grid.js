@@ -16,7 +16,7 @@ const ContentGrid = ( props ) => {
           }}
         ></div>
         <div className={styles.description}>
-          <h3>{item.title}</h3>
+          <h1>{item.title}</h1>
           <p>{item.description}</p>
           { item.link &&
             <ArrowLink href={item.link}>

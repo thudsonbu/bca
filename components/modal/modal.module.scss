@@ -42,7 +42,8 @@ $height-mobile: 95vh;
   .description {
     width: calc($width * (4 / 5) - 4em);
     height: $height;
-    padding: 2em;
+    overflow-y: scroll;
+    padding: 0em 2em 0em 2em;
 
     .title {
       font-size: 1.2em;

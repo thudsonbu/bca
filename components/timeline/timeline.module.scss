@@ -1,0 +1,154 @@
+@import "../../styles/colors.module.scss";
+@import "../../styles/globals.module.scss";
+
+@media (min-width: $mobile-width) {
+  .container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3em 0 3em 0;
+
+    .content {
+      width: 80%;
+      max-width: $max-width;
+
+      h1 {
+        font-weight: 800;
+        color: $blue-dark;
+        width: 100%;
+        text-align: center;
+        font-size: 2em;
+        margin-bottom: 1em;
+      }
+
+      .section {
+        display: flex;
+        justify-content: center;
+        align-items: stretch;
+        width: 100%;
+
+        &:nth-child(even) {
+          flex-direction: row-reverse;
+
+          h2 {
+            width: 100%;
+          }
+
+          p {
+            width: 100%;
+          }
+        }
+
+        .whitespace {
+          width: 45%;
+        }
+
+        .line_container {
+          width: 10%;
+          position: relative;
+
+          .line {
+            background: $blue-dark;
+            height: 100%;
+            width: 0.25em;
+            position: absolute;
+            right: 50%;
+          }
+
+          .dot {
+            background: $white;
+            border: 1px solid $blue-mid;
+            border-radius: 50%;
+            height: 1em;
+            width: 1em;
+            position: absolute;
+            left: calc(50% - 0.55em);
+            top: 3.75em;
+          }
+        }
+
+        .card {
+          width: 45%;
+
+          h2 {
+            font-weight: 400;
+          }
+
+          hr {
+            border: $blue-dark solid 1px;
+          }
+
+          i {
+            color: $blue-dark;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .content {
+      width: 80%;
+      max-width: $max-width;
+
+      .section {
+        display: flex;
+        justify-content: center;
+        align-items: stretch;
+        width: 100%;
+
+        .whitespace {
+          display: none;
+        }
+
+        .line_container {
+          width: 10%;
+          position: relative;
+
+          .line {
+            background: $blue-dark;
+            height: 100%;
+            width: 0.25em;
+            position: absolute;
+            left: calc(50% - 0.125em);
+          }
+
+          .dot {
+            background: $white;
+            border: 1px solid $blue-mid;
+            border-radius: 50%;
+            height: 1em;
+            width: 1em;
+            position: absolute;
+            left: calc(50% - 0.55em);
+            top: 1.5em;
+          }
+        }
+
+        .card {
+          width: 90%;
+
+          h2 {
+            font-weight: 400;
+          }
+
+          hr {
+            border: $blue-dark solid 1px;
+          }
+
+          i {
+            color: $blue-dark;
+          }
+        }
+      }
+    }
+  }
+}

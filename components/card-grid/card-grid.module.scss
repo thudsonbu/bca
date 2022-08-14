@@ -1,20 +1,19 @@
 @import "../../styles/colors.module.scss";
+@import "../../styles/globals.module.scss";
 
 .container {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: $highlight;
-  padding-top: 3em;
-  padding-bottom: 5em;
 
   .content {
     display: flex;
     justify-content: center;
     align-items: stretch;
     flex-wrap: wrap;
-    max-width: 1200px;
+    max-width: $max-width;
+    width: 80%;
     gap: .5em;
     padding: 1em;
   }

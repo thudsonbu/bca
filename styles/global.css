@@ -1,5 +1,6 @@
 body {
-  font-family: "Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+  font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
+    "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   margin: 0;
 
@@ -9,11 +10,16 @@ body {
 h1 {
   margin: 0;
   padding: 0;
-  font-size: 2.5em;
+  font-size: 3em;
   font-weight: 200;
 }
 
 p {
-  line-height: 1.5em;
+  font-size: 1.1em;
+  line-height: 1.7em;
   font-weight: 400;
+}
+
+mark {
+  color: #054a91;
 }

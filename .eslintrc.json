@@ -33,6 +33,10 @@
           ".jsx"
         ]
       }
+    ],
+    "max-len": [
+      "error",
+      { "ignoreStrings": true }
     ]
   }
 }
