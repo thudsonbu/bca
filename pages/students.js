@@ -1,16 +1,15 @@
 import Jumbotron from "../components/jumbotron/jumbotron";
 import GroupTitle from "../components/group-title/group-title";
-import Statement from "../components/statement/statement";
-import SectionSubtitle from "../components/section-subtitle/section-subtitle";
+import ImageStatement from "../components/image-statement/image-statement";
+import TabContainer from "../components/tab-container/tab-container";
 import Timeline from "../components/timeline/timeline";
-import { faker } from "@faker-js/faker";
 
 const Students = () => {
   return (
     <>
       <Jumbotron title={"Consulting Experience"} />
       <GroupTitle title={"Member Experience"} />
-      <Statement
+      <ImageStatement
         reverse={false}
         src={"./images/team.jpg"}
         description={
@@ -18,7 +17,7 @@ const Students = () => {
         }
       />
       <GroupTitle title={"Freshman Experience"} />
-      <Statement
+      <ImageStatement
         reverse={true}
         src={"./images/team.jpg"}
         description={
@@ -63,6 +62,71 @@ const Students = () => {
             eyebrow: "11/5/2022",
             description:
               "This is a five-week program that culminates in a case presentation. Throughout the program, sessions will be split between instruction and application.",
+          },
+        ]}
+      />
+      <GroupTitle title={"Bootcamp Experience"} />
+      <TabContainer
+        tabs={[
+          {
+            name: "Networking",
+            component: (
+              <ImageStatement
+                description={
+                  "This is a five-week program that culminates in a case presentation. Throughout the program, sessions will be split between instruction and application."
+                }
+              />
+            ),
+          },
+          {
+            name: "Problem Solving",
+            component: (
+              <ImageStatement
+                description={
+                  "This is a five-week program that culminates in a case presentation. Throughout the program, sessions will be split between instruction and application."
+                }
+              />
+            ),
+          },
+          {
+            name: "Skill Development",
+            component: (
+              <ImageStatement
+                description={
+                  "This is a five-week program that culminates in a case presentation. Throughout the program, sessions will be split between instruction and application."
+                }
+              />
+            ),
+          },
+          {
+            name: "Interview Prep",
+            component: (
+              <ImageStatement
+                description={
+                  "This is a five-week program that culminates in a case presentation. Throughout the program, sessions will be split between instruction and application."
+                }
+              />
+            ),
+          },
+          {
+            name: "Experience",
+            component: (
+              <ImageStatement
+                description={
+                  "This is a five-week program that culminates in a case presentation. Throughout the program, sessions will be split between instruction and application."
+                }
+              />
+            ),
+          },
+          {
+            name: "Mentorship",
+            component: (
+              <ImageStatement
+                description={
+                  "This is a five-week program that culminates in a case presentation. Throughout the program, sessions will be split between instruction and application."
+                }
+              />
+            ),
           },
         ]}
       />

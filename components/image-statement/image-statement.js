@@ -1,6 +1,6 @@
-import styles from "./statement.module.scss";
+import styles from "./image-statement.module.scss";
 
-const Statement = ({ src, title, description, reverse }) => {
+const ImageStatement = ({ src, title, description, reverse }) => {
   const sty = reverse
     ? styles.container + " " + styles.reverse
     : styles.container;
@@ -28,4 +28,4 @@ const Statement = ({ src, title, description, reverse }) => {
   );
 };
 
-export default Statement;
+export default ImageStatement;

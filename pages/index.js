@@ -1,8 +1,8 @@
 import Jumbotron from "../components/jumbotron/jumbotron";
-import Statement from "../components/statement/statement";
+import ImageStatement from "../components/image-statement/image-statement";
 import SectionTitle from "../components/section-title/section-title";
 import SectionSubtitle from "../components/section-subtitle/section-subtitle";
-import ContentGrid from "../components/content-grid/content-grid";
+import ImageGrid from "../components/image-grid/image-grid";
 import Partners from "../components/partners/partners";
 import ImageCard from "../components/image-card/image-card";
 import styles from "../styles/home.module.scss";
@@ -12,7 +12,7 @@ const Home = () => {
     <>
       <Jumbotron />
       <div className={styles.padding}>
-        <Statement
+        <ImageStatement
           src="./images/BCALogo.png"
           title={"About"}
           description={
@@ -21,7 +21,7 @@ const Home = () => {
         />
       </div>
       <SectionTitle title={"What We Do"} background={"blue"} />
-      <ContentGrid
+      <ImageGrid
         items={[
           {
             src: "./images/education.jpg",
@@ -81,7 +81,7 @@ const Home = () => {
       </div>
       <div className={styles.padding}>
         <SectionSubtitle title={"Reach out to us"} />
-        <ContentGrid
+        <ImageGrid
           items={[
             {
               src: "./images/education.jpg",

@@ -1,4 +1,4 @@
-import styles from './content-grid.module.scss';
+import styles from './image-grid.module.scss';
 import ArrowLink from '../arrow-link/arrow-link';
 
 const ContentGrid = ( props ) => {

@@ -4,15 +4,10 @@
   },
   "extends": [
     "next/core-web-vitals",
-    "@starryinternet/eslint-config-starry",
     "plugin:react/recommended",
     "plugin:react-hooks/recommended"
   ],
-  "plugins": [
-    "@starryinternet/starry",
-    "react",
-    "react-hooks"
-  ],
+  "plugins": ["react", "react-hooks"],
   "parserOptions": {
     "ecmaVersion": 12,
     "sourceType": "module",
@@ -28,15 +23,9 @@
     "react/jsx-filename-extension": [
       1,
       {
-        "extensions": [
-          ".js",
-          ".jsx"
-        ]
+        "extensions": [".js", ".jsx"]
       }
     ],
-    "max-len": [
-      "error",
-      { "ignoreStrings": true }
-    ]
+    "max-len": ["error", { "ignoreStrings": true }]
   }
 }

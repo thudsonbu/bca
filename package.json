@@ -22,7 +22,6 @@
     "react-dom": "18.2.0"
   },
   "devDependencies": {
-    "@starryinternet/eslint-config-starry": "^10.4.0",
     "eslint": "8.18.0",
     "eslint-config-next": "12.1.6",
     "sass": "^1.53.0"
