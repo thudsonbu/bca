@@ -1,26 +1,28 @@
-import styles from './statement.module.scss';
+import styles from "./statement.module.scss";
 
-const Statement = ( props ) => {
-  const sty = props.reverse ? styles.container + ' ' + styles.reverse : styles.container;
+const Statement = ({ src, title, description, reverse }) => {
+  const sty = reverse
+    ? styles.container + " " + styles.reverse
+    : styles.container;
 
   return (
     <div className={sty}>
-      { props.src &&
-        <div className={styles.image_container}>
+      <div className={styles.content}>
+        {src && (
           <div
             className={styles.image}
             style={{
-              backgroundImage: 'url(' +  props.src + ')',
-              backgroundRepeat: 'no-repeat',
-              backgroundPosition: 'center',
-              backgroundSize: 'cover'
+              backgroundImage: "url(" + src + ")",
+              backgroundRepeat: "no-repeat",
+              backgroundPosition: "center",
+              backgroundSize: "cover",
             }}
           ></div>
+        )}
+        <div className={styles.text}>
+          <h1>{title}</h1>
+          <p>{description}</p>
         </div>
-      }
-      <div className={styles.content}>
-        <h1>{ props.title }</h1>
-        <p>{ props.description }</p>
       </div>
     </div>
   );
