@@ -1,4 +1,4 @@
-import styles from './event-card.module.scss';
+import styles from "./event-card.module.scss";
 
 const EventCard = ({ title, date, src, description }) => {
   return (
@@ -7,17 +7,18 @@ const EventCard = ({ title, date, src, description }) => {
         <div
           className={styles.image}
           style={{
-            backgroundImage: 'url(' + src + ')',
-            backgroundRepeat: 'no-repeat',
-            backgroundPosition: 'center',
-            backgroundSize: 'cover'
+            backgroundImage: "url(" + src + ")",
+            backgroundRepeat: "no-repeat",
+            backgroundPosition: "center",
+            backgroundSize: "cover",
           }}
-        >
-        </div>
+        ></div>
         <div className={styles.description}>
-          <h3>{ title }</h3>
-          <p><i>{ date.toLocaleString() }</i></p>
-          <p>{ description }</p>
+          <h3>{title}</h3>
+          <p>
+            <i>{date.toLocaleString()}</i>
+          </p>
+          <p>{description}</p>
         </div>
       </div>
     </div>

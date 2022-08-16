@@ -1,9 +1,9 @@
-import styles from './section-subtitle.module.scss';
+import styles from "./section-subtitle.module.scss";
 
 const SectionSubtitle = ({ title, alignment }) => {
   const sty =
-    alignment === 'centered'
-      ? styles.container + ' ' + styles.centered
+    alignment === "centered"
+      ? styles.container + " " + styles.centered
       : styles.container;
 
   return (

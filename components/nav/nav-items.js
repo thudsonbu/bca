@@ -1,24 +1,24 @@
 const items = [
   {
-    title: 'About',
-    link: '/'
+    title: "About",
+    link: "/",
   },
   {
-    title: 'Our Team',
-    link: '/team'
+    title: "Our Team",
+    link: "/team",
   },
   {
-    title: 'Events',
-    link: '/events'
+    title: "Events",
+    link: "/events",
   },
   {
-    title: 'Students',
-    link: '/students'
+    title: "Students",
+    link: "/students",
   },
   {
-    title: 'Clients',
-    link: '/clients'
-  }
+    title: "Clients",
+    link: "/clients",
+  },
 ];
 
 export default items;

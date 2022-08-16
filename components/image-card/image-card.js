@@ -1,5 +1,5 @@
-import styles from './image-card.module.scss';
-import ArrowLink from '../arrow-link/arrow-link';
+import styles from "./image-card.module.scss";
+import ArrowLink from "../arrow-link/arrow-link";
 
 const ImageCard = ({ title, eyebrow, description, src, href }) => {
   return (
@@ -7,10 +7,10 @@ const ImageCard = ({ title, eyebrow, description, src, href }) => {
       <div
         className={styles.image}
         style={{
-          backgroundImage: 'url(' + src + ')',
-          backgroundRepeat: 'no-repeat',
-          backgroundPosition: 'center',
-          backgroundSize: 'cover'
+          backgroundImage: "url(" + src + ")",
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "center",
+          backgroundSize: "cover",
         }}
       ></div>
       <div className={styles.content}>
@@ -21,7 +21,11 @@ const ImageCard = ({ title, eyebrow, description, src, href }) => {
           </p>
         )}
         <h2>{description}</h2>
-        {href && <ArrowLink href={href} color='white'>{title}</ArrowLink>}
+        {href && (
+          <ArrowLink href={href} color="white">
+            {title}
+          </ArrowLink>
+        )}
       </div>
     </div>
   );

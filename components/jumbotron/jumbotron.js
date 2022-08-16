@@ -1,4 +1,4 @@
-import styles from './jumbotron.module.scss';
+import styles from "./jumbotron.module.scss";
 
 export default function Jumbotron({ title, description }) {
   return (
@@ -15,6 +15,6 @@ export default function Jumbotron({ title, description }) {
 }
 
 Jumbotron.defaultProps = {
-  title: 'Bentley Consulting Association',
-  description: `Bentley's premier consulting organization.`
+  title: "Bentley Consulting Association",
+  description: `Bentley's premier consulting organization.`,
 };

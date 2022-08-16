@@ -1,9 +1,9 @@
-import styles from './card-group.module.scss';
+import styles from "./card-group.module.scss";
 
 const CardGroup = ({ children, columns, title }) => {
   let styleByColumns;
 
-  switch ( columns ) {
+  switch (columns) {
     case 1:
       styleByColumns = styles.card_container_one;
       break;
