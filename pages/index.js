@@ -28,24 +28,32 @@ const Home = () => {
             title: "Real Experience, Real Skills",
             description:
               "Our members reinforce concepts taught through our Bootcamp and Associate Consultant programming by working on actual client projects. These engagements vary across business segments, allowing our members to develop diverse technical skills along with important soft skills needed to be successful in consulting. These include presentation skills, professionalism, and many more!",
+            link: "./students",
+            link_text: "Learn more",
           },
           {
             src: "./images/charts.jpg",
-            title: "Bootcamps",
+            title: "Consulting Bootcamps",
             description:
               "Our 5-week Bootcamp serves as the primary source of entry for the organization. In the BCA Bootcamp, students learn fundamental skills necessary for completing the consulting process. This program culminates in a client project where members apply their skills to develop real world experience.",
+            link: "./students",
+            link_text: "Learn more",
           },
           {
             src: "./images/events.jpg",
             title: "Case Competitions",
             description:
               "BCA hosts a case competition each semester: freshman case competition in the fall, and an intercollegiate competition in the spring. These case competitions give participants valuable experience in solving complex business problems and creating final presentations for a panel of judges working in consulting.",
+            link: "./students",
+            link_text: "Learn more",
           },
           {
             src: "./images/team.jpg",
             title: "Client Projects",
             description:
               "As both a Bootcamp Participant and an Associate Consultant, members have the opportunity to work with real life businesses to complete probono consulting projects. These engagements allow our members to apply skills taught by BCA and expand their knowledge in a variety of business segments. ",
+            link: "./clients",
+            link_text: "Learn more",
           },
         ]}
       />

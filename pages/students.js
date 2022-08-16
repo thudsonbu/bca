@@ -1,8 +1,15 @@
 import Jumbotron from "../components/jumbotron/jumbotron";
 import GroupTitle from "../components/group-title/group-title";
 import ImageStatement from "../components/image-statement/image-statement";
-import TabContainer from "../components/tab-container/tab-container";
 import Timeline from "../components/timeline/timeline";
+import InfoLeaf from "../components/info-leaf/info-leaf";
+import CardGrid from "../components/card-grid/card-grid";
+import GroupAddIcon from "@mui/icons-material/GroupAdd";
+import BuildIcon from "@mui/icons-material/Build";
+import DoubleArrowIcon from "@mui/icons-material/DoubleArrow";
+import DataUsageIcon from "@mui/icons-material/DataUsage";
+import HowToRegIcon from "@mui/icons-material/HowToReg";
+import SuperVisorAccountIcon from "@mui/icons-material/SupervisorAccount";
 
 const Students = () => {
   return (
@@ -66,70 +73,52 @@ const Students = () => {
         ]}
       />
       <GroupTitle title={"Bootcamp Experience"} />
-      <TabContainer
-        tabs={[
-          {
-            name: "Networking",
-            component: (
-              <ImageStatement
-                description={
-                  "This is a five-week program that culminates in a case presentation. Throughout the program, sessions will be split between instruction and application."
-                }
-              />
-            ),
-          },
-          {
-            name: "Problem Solving",
-            component: (
-              <ImageStatement
-                description={
-                  "This is a five-week program that culminates in a case presentation. Throughout the program, sessions will be split between instruction and application."
-                }
-              />
-            ),
-          },
-          {
-            name: "Skill Development",
-            component: (
-              <ImageStatement
-                description={
-                  "This is a five-week program that culminates in a case presentation. Throughout the program, sessions will be split between instruction and application."
-                }
-              />
-            ),
-          },
-          {
-            name: "Interview Prep",
-            component: (
-              <ImageStatement
-                description={
-                  "This is a five-week program that culminates in a case presentation. Throughout the program, sessions will be split between instruction and application."
-                }
-              />
-            ),
-          },
-          {
-            name: "Experience",
-            component: (
-              <ImageStatement
-                description={
-                  "This is a five-week program that culminates in a case presentation. Throughout the program, sessions will be split between instruction and application."
-                }
-              />
-            ),
-          },
-          {
-            name: "Mentorship",
-            component: (
-              <ImageStatement
-                description={
-                  "This is a five-week program that culminates in a case presentation. Throughout the program, sessions will be split between instruction and application."
-                }
-              />
-            ),
-          },
-        ]}
-      />
+      <CardGrid>
+        <InfoLeaf
+          icon={<GroupAddIcon />}
+          title={"Networking"}
+          description={
+            "Develop a strong network of fellow future consultants, along with industry professionals, to cultivate a consulting community and provide opportunities. "
+          }
+        />
+        <InfoLeaf
+          icon={<BuildIcon />}
+          title={"Problem Solving"}
+          description={
+            "Students will learn how to approach problems logically and creatively, which will be reinforced through client projects. "
+          }
+        />
+        <InfoLeaf
+          icon={<DoubleArrowIcon />}
+          title={"Skill Development"}
+          description={
+            "Prepare for client engagement by developing skills important to the consulting process, including PowerPoint and frameworks. "
+          }
+        />
+      </CardGrid>
+      <CardGrid>
+        <InfoLeaf
+          icon={<DataUsageIcon />}
+          title={"Interview Prep"}
+          description={
+            "By practicing frameworks and problem-solving skills, students will learn how to succeed in the case interview process."
+          }
+        />
+        <InfoLeaf
+          icon={<HowToRegIcon />}
+          title={"Experience"}
+          description={
+            "Students will gain hands-on client experience that they will be able to put on their resumes and leverage to get consulting positions. "
+          }
+        />
+        <InfoLeaf
+          icon={<SuperVisorAccountIcon />}
+          title={"Mentorship"}
+          description={
+            "Students will get direct access and coaching from one of our experienced project leaders along with the entire BCA Eboard. "
+          }
+        />
+      </CardGrid>
     </>
   );
 };

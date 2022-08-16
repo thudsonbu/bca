@@ -1,5 +1,5 @@
-@import '../../styles/colors.module.scss';
-@import '../../styles/globals.module.scss';
+@import "../../styles/colors.module.scss";
+@import "../../styles/globals.module.scss";
 
 .content_grid {
   display: flex;
@@ -13,17 +13,31 @@
   }
 
   @media (min-width: $mobile-width) {
+    h3 {
+      font-size: 3em;
+      margin-bottom: 0;
+      margin-top: 0;
+    }
+
     .row {
       display: flex;
       flex: wrap;
       width: 100%;
+
+      &:first-child {
+        border-top: 2px solid $highlight;
+      }
+
+      &:last-child {
+        border-bottom: 2px solid $highlight;
+      }
 
       &:nth-child(odd) {
         flex-direction: row-reverse;
 
         .description {
           padding-left: 5%;
-          width: calc( 50% - ( 10% + 3em ) );
+          width: calc(50% - (10% + 3em));
         }
       }
 
@@ -37,7 +51,7 @@
       }
 
       .description {
-        width: calc( 50% - ( 10% + 3em ) );
+        width: calc(50% - (10% + 3em));
         max-width: 50em;
         display: flex;
         flex-direction: column;
@@ -66,17 +80,15 @@
         height: 12em;
       }
 
-        h1 {
-          padding-top: 1em;
-          font-size: 1.8em;
-        }
+      h3 {
+        font-size: 1.5em;
+        margin-bottom: 0em;
+      }
 
-        p {
-          margin-top: .25em;
-          font-size: 1.1em;
-          padding-top: 1em;
-          font-weight: 400;
-        }
+      p {
+        font-size: 1.1em;
+        font-weight: 400;
+      }
     }
   }
 }
