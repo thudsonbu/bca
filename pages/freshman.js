@@ -11,7 +11,7 @@ import DataUsageIcon from "@mui/icons-material/DataUsage";
 import HowToRegIcon from "@mui/icons-material/HowToReg";
 import SuperVisorAccountIcon from "@mui/icons-material/SupervisorAccount";
 
-const Students = () => {
+const Freshman = () => {
   return (
     <>
       <Jumbotron title={"Consulting Experience"} />
@@ -123,4 +123,4 @@ const Students = () => {
   );
 };
 
-export default Students;
+export default Freshman;

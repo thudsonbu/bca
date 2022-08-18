@@ -14,6 +14,16 @@ const items = [
   {
     title: "Students",
     link: "/students",
+    sublinks: [
+      {
+        title: "Freshman",
+        link: "/freshman",
+      },
+      {
+        title: "Bootcamp",
+        link: "/bootcamp",
+      },
+    ],
   },
   {
     title: "Clients",
