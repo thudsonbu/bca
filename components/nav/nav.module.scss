@@ -70,14 +70,18 @@
     &:hover {
       color: $blue-dark;
     }
+  }
 
-    &:focus ~ .sublinks {
-      opacity: 1;
-      top: 3em;
-      z-index: 1;
+  .link_group {
+    &:hover {
+      .sublinks {
+        opacity: 1;
+        top: 3em;
+        z-index: 1;
 
-      a {
-        pointer-events: all;
+        a {
+          pointer-events: all;
+        }
       }
     }
   }
@@ -89,7 +93,7 @@
     .sublinks {
       position: absolute;
       display: flex;
-      top: 0em;
+      top: -2em;
       z-index: -2;
       background: $white;
       flex-direction: column;
@@ -101,10 +105,6 @@
         height: 1.5em;
         padding: 0.5em;
         pointer-events: none;
-
-        &:focus {
-          pointer-events: all;
-        }
       }
     }
   }

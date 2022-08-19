@@ -1,0 +1,109 @@
+@import "../../styles/colors.module.scss";
+@import "../../styles/globals.module.scss";
+
+.container {
+  border-radius: 1em;
+  padding: 1.5em;
+
+  .icon_container {
+    height: 10em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  svg {
+    color: $blue-dark;
+    height: 5em;
+    width: 5em;
+  }
+
+  p {
+    color: $grey-dark;
+    font-size: 0.9em;
+  }
+}
+
+@media (min-width: $mobile-width) {
+  .container {
+    max-width: 14em;
+    width: 25%;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .container {
+    width: 60%;
+  }
+}
+
+.blue_dark {
+  border: 4px solid $blue-dark;
+
+  h3 {
+    color: $blue-dark;
+  }
+  svg {
+    color: $blue-dark;
+  }
+}
+
+.blue_mid {
+  border: 4px solid $blue-mid;
+
+  h3 {
+    color: $blue-dark;
+  }
+
+  svg {
+    color: $blue-dark;
+  }
+}
+
+.blue_light {
+  border: 4px solid $blue-light;
+
+  h3 {
+    color: $blue-dark;
+  }
+
+  svg {
+    color: $blue-dark;
+  }
+}
+
+.grey_dark {
+  border: 4px solid $grey-dark;
+
+  h3 {
+    color: $grey-dark;
+  }
+
+  svg {
+    color: $grey-dark;
+  }
+}
+
+.grey_mid {
+  border: 4px solid $grey-mid;
+
+  h3 {
+    color: $grey-dark;
+  }
+
+  svg {
+    color: $grey-dark;
+  }
+}
+
+.grey_light {
+  border: 4px solid $grey-light;
+
+  h3 {
+    color: $grey-dark;
+  }
+
+  svg {
+    color: $grey-dark;
+  }
+}

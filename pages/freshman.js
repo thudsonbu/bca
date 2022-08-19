@@ -1,9 +1,9 @@
 import Jumbotron from "../components/jumbotron/jumbotron";
-import GroupTitle from "../components/group-title/group-title";
 import ImageStatement from "../components/image-statement/image-statement";
 import Timeline from "../components/timeline/timeline";
-import InfoLeaf from "../components/info-leaf/info-leaf";
 import CardGrid from "../components/card-grid/card-grid";
+import IconCard from "../components/icon-card/icon-card";
+import GroupTitle from "../components/group-title/group-title";
 import GroupAddIcon from "@mui/icons-material/GroupAdd";
 import BuildIcon from "@mui/icons-material/Build";
 import DoubleArrowIcon from "@mui/icons-material/DoubleArrow";
@@ -14,16 +14,8 @@ import SuperVisorAccountIcon from "@mui/icons-material/SupervisorAccount";
 const Freshman = () => {
   return (
     <>
-      <Jumbotron title={"Consulting Experience"} />
-      <GroupTitle title={"Member Experience"} />
-      <ImageStatement
-        reverse={false}
-        src={"./images/team.jpg"}
-        description={
-          "With the Bentley Consulting Association, members gain hands-on experience that helps prepare them for the consulting industry. The Freshman Experience is designed to give first semester students an introduction to consulting and case competitions, which are valuable experiences to add to their resumes. In the Bootcamp Program, students will have the opportunity to learn fundamental consulting skills and engage with clients. If successful in the Bootcamp, students will be invited to become an Associate Consultant, where they will be able to complete client projects to build up their consulting ability and have access to exclusive networking events, guest speakers, and skills events."
-        }
-      />
-      <GroupTitle title={"Freshman Experience"} />
+      <Jumbotron title={"Freshman Experience"} />
+      <GroupTitle title={"Overview"} />
       <ImageStatement
         reverse={true}
         src={"./images/team.jpg"}
@@ -72,51 +64,38 @@ const Freshman = () => {
           },
         ]}
       />
-      <GroupTitle title={"Bootcamp Experience"} />
       <CardGrid>
-        <InfoLeaf
-          icon={<GroupAddIcon />}
-          title={"Networking"}
-          description={
-            "Develop a strong network of fellow future consultants, along with industry professionals, to cultivate a consulting community and provide opportunities. "
-          }
-        />
-        <InfoLeaf
-          icon={<BuildIcon />}
-          title={"Problem Solving"}
-          description={
-            "Students will learn how to approach problems logically and creatively, which will be reinforced through client projects. "
-          }
-        />
-        <InfoLeaf
-          icon={<DoubleArrowIcon />}
-          title={"Skill Development"}
-          description={
-            "Prepare for client engagement by developing skills important to the consulting process, including PowerPoint and frameworks. "
-          }
-        />
-      </CardGrid>
-      <CardGrid>
-        <InfoLeaf
+        <IconCard
           icon={<DataUsageIcon />}
           title={"Interview Prep"}
           description={
             "By practicing frameworks and problem-solving skills, students will learn how to succeed in the case interview process."
           }
+          color={"blue_dark"}
         />
-        <InfoLeaf
+        <IconCard
           icon={<HowToRegIcon />}
           title={"Experience"}
           description={
             "Students will gain hands-on client experience that they will be able to put on their resumes and leverage to get consulting positions. "
           }
+          color={"blue_mid"}
         />
-        <InfoLeaf
+        <IconCard
           icon={<SuperVisorAccountIcon />}
           title={"Mentorship"}
           description={
             "Students will get direct access and coaching from one of our experienced project leaders along with the entire BCA Eboard. "
           }
+          color={"blue_light"}
+        />
+        <IconCard
+          icon={<DataUsageIcon />}
+          title={"Interview Prep"}
+          description={
+            "By practicing frameworks and problem-solving skills, students will learn how to succeed in the case interview process."
+          }
+          color={"grey_dark"}
         />
       </CardGrid>
     </>
