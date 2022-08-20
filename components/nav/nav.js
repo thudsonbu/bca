@@ -181,7 +181,9 @@ const Nav = () => {
         return (
           <div className={styles.link_group}>
             <div key={item.link} className={styles.link}>
-              {item.sublinks && <div className={styles.sublinks}>{sublinks}</div>}
+              {item.sublinks && (
+                <div className={styles.sublinks}>{sublinks}</div>
+              )}
               <button>{item.title}</button>
             </div>
           </div>

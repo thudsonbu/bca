@@ -1,6 +1,4 @@
 import styles from './card.module.scss';
-import Image from 'next/image';
-import placeholder from '../../public/868690.png';
 
 export default function Card({ title, description, src }) {
   return (
