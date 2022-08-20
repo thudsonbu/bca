@@ -5,7 +5,7 @@ import placeholder from '../../public/868690.png';
 export default function Card({ title, description, src }) {
   return (
     <div className={styles.container}>
-      {src && (
+      { src && (
         <div className={styles.imageContainer}>
           <div
             className={styles.image}
@@ -16,6 +16,7 @@ export default function Card({ title, description, src }) {
               backgroundSize: 'cover'
             }}
           ></div>
+        </div>
       )}
       <h1>{title}</h1>
       {description && <p>{description}</p>}
