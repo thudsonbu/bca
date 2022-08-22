@@ -59,7 +59,7 @@ const Events = () => {
     <>
       <Jumbotron
         title={"Upcoming Events"}
-        description={"Events the BCA has planned this year."}
+        description={"Events the BCA has planned this year"}
       />
       {groups}
     </>

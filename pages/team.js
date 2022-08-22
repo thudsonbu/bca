@@ -10,7 +10,7 @@ const Team = () => {
     <>
       <Jumbotron
         title={"Our Team"}
-        description={"Meet our leadership and consultants."}
+        description={"Meet our leadership and consultants"}
       />
       <div className={styles.card_grid}>
         <SectionTitle title={"Executive Board"} />
@@ -37,7 +37,7 @@ const Team = () => {
           />
           <ModalCard
             name={"Maria Campbell"}
-            src="./images/headshots/celia_schurman.jfif"
+            src="./images/headshots/maria_campbell.jpeg"
             title={"Head of Marketing"}
             description={
               "Maria Campbell is from Long Island, New York. Maria is a second-year student at Bentley University. She is a Marketing major with an Information Design and Corporate Communication minor. Maria also serves as the Head of Operations for the Bentley Marketing Association and as a Marketing Assistant for the Bentley Blockchain Association. Maria Campbell is a diligent college student who is passionate about Marketing and is enthusiastic for the future of Bentley Consulting Association."
