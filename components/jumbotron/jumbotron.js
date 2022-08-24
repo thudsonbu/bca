@@ -12,9 +12,4 @@ export default function Jumbotron({ title, description }) {
       </div>
     </div>
   );
-}
-
-Jumbotron.defaultProps = {
-  title: "Bentley Consulting Association",
-  description: `Bentley's premier consulting organization.`,
 };

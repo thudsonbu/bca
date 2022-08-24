@@ -24,11 +24,11 @@
     margin-left: 0.25em;
     margin-top: 0.1em;
     color: $blue-mid;
-    transition: all 0.2s ease-in-out;
+    transition: transform 0.2s ease-in-out;
   }
 
   &:hover svg {
-    margin-left: 0.5em;
+    transform: translateX(0.25em);
     color: $blue-dark;
   }
 }
@@ -49,5 +49,15 @@
 
   &:hover svg {
     color: $grey-light;
+  }
+}
+
+.large {
+  a {
+    font-size: 2em;
+  }
+
+  svg {
+    font-size: 2em;
   }
 }

@@ -4,13 +4,18 @@ import { useRouter } from "next/router";
 
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 
-const ArrowLink = ({ href, color, children }) => {
+const ArrowLink = ({ href, color, size, children }) => {
   const router = useRouter();
 
-  const sty =
-    color === "white"
-      ? styles.arrow_link + " " + styles.white
-      : styles.arrow_link;
+  let sty = styles.arrow_link;
+
+  if ( color === "white" ) {
+    sty += " " + styles.white;
+  }
+
+  if ( size === "large" ) {
+    sty += " " + styles.large;
+  }
 
   return (
     <div className={sty} onClick={() => router.push(href)}>

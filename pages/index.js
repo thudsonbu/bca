@@ -10,7 +10,9 @@ import styles from "../styles/home.module.scss";
 const Home = () => {
   return (
     <>
-      <Jumbotron />
+      <Jumbotron
+        title={"Bentley Consulting Association"}
+      />
       <div className={styles.padding}>
         <ImageStatement
           src="./images/BCALogo.png"

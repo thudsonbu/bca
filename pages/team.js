@@ -1,8 +1,9 @@
-import Jumbotron from "../components/jumbotron/jumbotron";
-import CardGrid from "../components/card-grid/card-grid";
-import ModalCard from "../components/modal-card/modal-card";
-import SectionTitle from "../components/group-title/group-title";
+import Jumbotron       from "../components/jumbotron/jumbotron";
+import CardGrid        from "../components/card-grid/card-grid";
+import ModalCard       from "../components/modal-card/modal-card";
+import SectionTitle    from "../components/group-title/group-title";
 import SectionSubtitle from "../components/section-subtitle/section-subtitle";
+
 import styles from "../styles/team.module.scss";
 
 const Team = () => {

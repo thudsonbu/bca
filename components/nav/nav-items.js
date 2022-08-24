@@ -16,6 +16,10 @@ const items = [
     link: "/students",
     sublinks: [
       {
+        title: "Associates",
+        link: "/associates",
+      },
+      {
         title: "Freshman",
         link: "/freshman",
       },

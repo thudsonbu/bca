@@ -1,7 +1,6 @@
 import Jumbotron from "../components/jumbotron/jumbotron";
 import GroupTitle from "../components/group-title/group-title";
 import ImageStatement from "../components/image-statement/image-statement";
-import Timeline from "../components/timeline/timeline";
 import InfoLeaf from "../components/info-leaf/info-leaf";
 import CardGrid from "../components/card-grid/card-grid";
 import GroupAddIcon from "@mui/icons-material/GroupAdd";
@@ -17,13 +16,13 @@ const Bootcamp = () => {
       <Jumbotron title={"Bootcamp Experience"} />
       <GroupTitle title={"Overview"} />
       <ImageStatement
-        reverse={false}
+        reverse={true}
         src={"./images/team.jpg"}
         description={
           "The BCA Bootcamp is a holistic introduction to the consulting industry. We equip creative, curious, and ambitious students with the tools to develop client solutions that have a real-world impact. We are always looking for Bentley’s best and brightest disruptors to help us pioneer the future of BCA. With us, you will grow personally and professionally, and have an experience like no other."
         }
       />
-      <GroupTitle title={"Benefits"} />
+      <GroupTitle title={"What you will learn"} />
       <CardGrid>
         <InfoLeaf
           icon={<GroupAddIcon />}
