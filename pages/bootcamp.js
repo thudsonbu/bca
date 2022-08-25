@@ -69,9 +69,6 @@ const Bootcamp = () => {
           }
         />
       </CardGrid>
-
-
-
     </>
   );
 };

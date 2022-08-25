@@ -1,0 +1,48 @@
+@import './globals.module.scss';
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.container {
+  width: 100%;
+}
+
+@mixin flex_grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+
+.flex_grid__centered {
+  @include flex_grid;
+  max-width: $max-width;
+  width: 100%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.flex_grid__full_width {
+  @include flex_grid;
+  width: 100%;
+}
+
+.section {
+  padding-top: 3em;
+  padding-bottom: 3em;
+  width: 100%;
+
+  @media (max-width: $mobile-width) {
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+  }
+}
+
+.mt-2 {
+  margin-top: 2em;
+}

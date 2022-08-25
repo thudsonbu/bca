@@ -31,33 +31,33 @@
     transform: translateX(0.25em);
     color: $blue-dark;
   }
-}
 
-.white {
-  a {
-    color: $white;
-    transition: all 0.2s ease-in-out;
+  &.white {
+    a {
+      color: $white;
+      transition: all 0.2s ease-in-out;
+    }
+
+    &:hover a {
+      color: $grey-light;
+    }
+
+    svg {
+      color: $white;
+    }
+
+    &:hover svg {
+      color: $grey-light;
+    }
   }
 
-  &:hover a {
-    color: $grey-light;
-  }
+  &.large {
+    a {
+      font-size: 2em;
+    }
 
-  svg {
-    color: $white;
-  }
-
-  &:hover svg {
-    color: $grey-light;
-  }
-}
-
-.large {
-  a {
-    font-size: 2em;
-  }
-
-  svg {
-    font-size: 2em;
+    svg {
+      font-size: 2em;
+    }
   }
 }

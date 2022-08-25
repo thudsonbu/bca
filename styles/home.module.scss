@@ -1,20 +1,5 @@
 @import "./colors.module.scss";
 
-.stats {
-  max-width: 100%;
-  display: flex;
-  justify-content: space-between;
-  padding: 4em;
-  animation: statsFadeUp 1s 1s ease-in-out forwards;
-  opacity: 0;
-}
-
-.flex {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-}
-
 .padding {
   padding: 3em 0 3em 0;
 }
