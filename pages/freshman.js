@@ -1,10 +1,10 @@
-import styles from "../styles/freshman.module.scss";
-
 import Jumbotron  from "../components/jumbotron/jumbotron";
 import Timeline   from "../components/timeline/timeline";
 import GroupTitle from "../components/group-title/group-title";
 import Statement  from "../components/statement/statement";
 import ArrowLink  from "../components/arrow-link/arrow-link";
+
+import styles from "../styles/freshman.module.scss";
 
 const Freshman = () => {
   return (

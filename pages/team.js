@@ -1,9 +1,7 @@
 import Jumbotron       from "../components/jumbotron/jumbotron";
-import CardGrid        from "../components/card-grid/card-grid";
 import ModalCard       from "../components/modal-card/modal-card";
 import SectionTitle    from "../components/group-title/group-title";
 
-import team_styles   from "../styles/team.module.scss";
 import layout_styles from "../styles/layouts.module.scss";
 import color_styles  from "../styles/colors.module.scss";
 

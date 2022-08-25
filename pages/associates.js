@@ -1,11 +1,13 @@
-import Jumbotron from "../components/jumbotron/jumbotron";
-import CardGrid from "../components/card-grid/card-grid";
-import IconCard from "../components/icon-card/icon-card";
+import Jumbotron  from "../components/jumbotron/jumbotron";
+import CardGrid   from "../components/card-grid/card-grid";
+import IconCard   from "../components/icon-card/icon-card";
 import GroupTitle from "../components/group-title/group-title";
-import Statement from "../components/statement/statement";
-import DataUsageIcon from "@mui/icons-material/DataUsage";
-import HowToRegIcon from "@mui/icons-material/HowToReg";
+import Statement  from "../components/statement/statement";
+
+import DataUsageIcon         from "@mui/icons-material/DataUsage";
+import HowToRegIcon          from "@mui/icons-material/HowToReg";
 import SuperVisorAccountIcon from "@mui/icons-material/SupervisorAccount";
+
 import { faker } from "@faker-js/faker";
 
 const paragraphs = faker.lorem.paragraphs();

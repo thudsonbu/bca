@@ -1,7 +1,8 @@
-import Jumbotron from "../components/jumbotron/jumbotron";
+import Jumbotron  from "../components/jumbotron/jumbotron";
 import GroupTitle from "../components/group-title/group-title";
-import EventCard from "../components/event-card/event-card";
-import CardGrid from "../components/card-grid/card-grid";
+import EventCard  from "../components/event-card/event-card";
+import CardGrid   from "../components/card-grid/card-grid";
+
 import { faker } from "@faker-js/faker";
 
 function getEvents() {

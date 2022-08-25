@@ -1,13 +1,14 @@
-import Jumbotron from "../components/jumbotron/jumbotron";
-import GroupTitle from "../components/group-title/group-title";
+import Jumbotron      from "../components/jumbotron/jumbotron";
+import GroupTitle     from "../components/group-title/group-title";
 import ImageStatement from "../components/image-statement/image-statement";
-import InfoLeaf from "../components/info-leaf/info-leaf";
-import CardGrid from "../components/card-grid/card-grid";
-import GroupAddIcon from "@mui/icons-material/GroupAdd";
-import BuildIcon from "@mui/icons-material/Build";
-import DoubleArrowIcon from "@mui/icons-material/DoubleArrow";
-import DataUsageIcon from "@mui/icons-material/DataUsage";
-import HowToRegIcon from "@mui/icons-material/HowToReg";
+import InfoLeaf       from "../components/info-leaf/info-leaf";
+import CardGrid       from "../components/card-grid/card-grid";
+
+import GroupAddIcon          from "@mui/icons-material/GroupAdd";
+import BuildIcon             from "@mui/icons-material/Build";
+import DoubleArrowIcon       from "@mui/icons-material/DoubleArrow";
+import DataUsageIcon         from "@mui/icons-material/DataUsage";
+import HowToRegIcon          from "@mui/icons-material/HowToReg";
 import SuperVisorAccountIcon from "@mui/icons-material/SupervisorAccount";
 
 const Bootcamp = () => {

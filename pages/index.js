@@ -6,7 +6,6 @@ import ImageGrid       from "../components/image-grid/image-grid";
 import Partners        from "../components/partners/partners";
 import ImageCard       from "../components/image-card/image-card";
 
-import home_styles   from "../styles/home.module.scss";
 import layout_styles from "../styles/layouts.module.scss";
 
 const Home = () => {
