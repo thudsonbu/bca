@@ -4,7 +4,8 @@ import GroupTitle from "../components/group-title/group-title";
 import Statement  from "../components/statement/statement";
 import ArrowLink  from "../components/arrow-link/arrow-link";
 
-import styles from "../styles/freshman.module.scss";
+import freshman_styles from "../styles/freshman.module.scss";
+import layout_styles   from "../styles/layouts.module.scss";
 
 const Freshman = () => {
   return (
@@ -57,13 +58,15 @@ const Freshman = () => {
           },
         ]}
       />
-      <div className={styles.signup_container}>
-        <ArrowLink
-          href={"/students/bootcamp"}
-          size={"large"}
-        >
-          Signup
-        </ArrowLink>
+      <div className={layout_styles.section}>
+        <div className={freshman_styles.signup_container}>
+          <ArrowLink
+            href={"/bootcamp"}
+            size={"large"}
+          >
+            Signup
+          </ArrowLink>
+        </div>
       </div>
     </>
   );

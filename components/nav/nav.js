@@ -1,19 +1,24 @@
-import styles from "./nav.module.scss";
-import Link from "next/link";
 import items from "./nav-items";
 import icons from "./nav-icons";
-import MenuIcon from "@mui/icons-material/Menu";
-import CloseIcon from "@mui/icons-material/Close";
+
+import MenuIcon            from "@mui/icons-material/Menu";
+import CloseIcon           from "@mui/icons-material/Close";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
+
+import styles from "./nav.module.scss";
+
+import Link from "next/link";
+
 import { useEffect, useState } from "react";
+
 import { useRouter } from "next/router";
 
 const Nav = () => {
-  const [mobile, setMobile] = useState();
-  const [open, setOpen] = useState();
-  const [hidden, setHidden] = useState(false);
+  const [mobile, setMobile]       = useState();
+  const [open, setOpen]           = useState();
+  const [hidden, setHidden]       = useState(false);
   const [sideItems, setSideItems] = useState([]);
-  const [shifted, setShifted] = useState(false);
+  const [shifted, setShifted]     = useState(false);
 
   const router = useRouter();
 
@@ -179,12 +184,12 @@ const Nav = () => {
         });
 
         return (
-          <div className={styles.link_group}>
+          <div className={styles.link_group} key={item.link}>
             <div key={item.link} className={styles.link}>
               {item.sublinks && (
                 <div className={styles.sublinks}>{sublinks}</div>
               )}
-              <button>{item.title}</button>
+              <Link href={item.link}>{item.title}</Link>
             </div>
           </div>
         );

@@ -1,6 +1,8 @@
+import ArrowLink from "../arrow-link/arrow-link";
+
 import styles from "./image-statement.module.scss";
 
-const ImageStatement = ({ src, title, description, reverse }) => {
+const ImageStatement = ({ src, title, description, reverse, link }) => {
   const sty = reverse
     ? styles.container + " " + styles.reverse
     : styles.container;
@@ -22,6 +24,9 @@ const ImageStatement = ({ src, title, description, reverse }) => {
         <div className={styles.text}>
           <h1>{title}</h1>
           <p>{description}</p>
+          { link && (
+            <ArrowLink href={link}>Learn More</ArrowLink>
+          )}
         </div>
       </div>
     </div>

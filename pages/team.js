@@ -1,6 +1,6 @@
-import Jumbotron       from "../components/jumbotron/jumbotron";
-import ModalCard       from "../components/modal-card/modal-card";
-import SectionTitle    from "../components/group-title/group-title";
+import Jumbotron    from "../components/jumbotron/jumbotron";
+import ModalCard    from "../components/modal-card/modal-card";
+import SectionTitle from "../components/group-title/group-title";
 
 import layout_styles from "../styles/layouts.module.scss";
 import color_styles  from "../styles/colors.module.scss";
@@ -13,10 +13,10 @@ const Team = () => {
         description={"Meet our leadership and consultants"}
       />
       <div className={color_styles.bg_highlight}>
+        <SectionTitle title={"Executive Board"} />
         <div className={layout_styles.section}>
-          <SectionTitle title={"Executive Board"} />
-          <div className={layout_styles.full_width}>
-            <div className={layout_styles.flex_grid__centered}>
+          <div className={layout_styles.container}>
+            <div className={layout_styles.flex_grid_centered}>
               <ModalCard
                 name={"Brenna Masterson"}
                 src="./images/headshots/brenna_masterson.jpg"

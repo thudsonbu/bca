@@ -3,6 +3,8 @@ import GroupTitle from "../components/group-title/group-title";
 import EventCard  from "../components/event-card/event-card";
 import CardGrid   from "../components/card-grid/card-grid";
 
+import layout_styles from "../styles/layouts.module.scss";
+
 import { faker } from "@faker-js/faker";
 
 function getEvents() {

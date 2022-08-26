@@ -1,0 +1,9 @@
+@import "./colors.module.scss";
+
+.signup_button {
+  margin-top: 1.5em;
+  width: 8.8em;
+  height: 2em;
+  background-color: $blue-dark;
+  font-size: 2em;
+}
