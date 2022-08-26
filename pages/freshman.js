@@ -24,7 +24,7 @@ const Freshman = () => {
             title: "Week 1: Introduction to Consulting Cases",
             eyebrow: "10/3/2022",
             description:
-              "This is a five-week program that culminates in a case presentation. Throughout the program, sessions will be split between instruction and application.",
+              "Test to see if I can change this",
           },
           {
             title: "Week 2: Light Framework Day",
