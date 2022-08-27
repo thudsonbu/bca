@@ -3,3 +3,48 @@ $nav-height: 70px;
 $footer-height: 180px;
 $mobile-width: 768px;
 $mobile-footer-height: 250px;
+$fadeLeftAnimation: fadeLeft 1s ease-in-out;
+$fadeRightAnimation: fadeRight 1s ease-in-out;
+$fadeUpAnimation: fadeUp 1s ease-in-out;
+$fadeDownAnimation: fadeDown 1s ease-in-out;
+
+@keyframes fadeLeft {
+  from {
+    opacity: 0;
+    transform: translate(20%);
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+@keyframes fadeRight {
+  from {
+    opacity: 0;
+    transform: translate(-20%);
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(-20%);
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translateY(20%);
+  }
+  to {
+    opacity: 100%;
+  }
+}
+

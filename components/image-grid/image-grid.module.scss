@@ -30,6 +30,7 @@
 
       &:nth-child(odd) {
         flex-direction: row-reverse;
+        animation: $fadeRightAnimation;
 
         .description {
           padding-left: 5%;
@@ -37,8 +38,12 @@
         }
       }
 
+      &:nth-child(even){
+          animation: $fadeLeftAnimation;
+      }
+
       .image {
-        width: 50%;
+        width: 50%; 
       }
 
       a {

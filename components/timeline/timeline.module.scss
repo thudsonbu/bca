@@ -136,6 +136,17 @@
             left: calc(50% - 0.125em);
           }
 
+          .line_tracker {
+            background: pink;
+            height: 100%;
+            width: 0.25em;
+            //transform: translateY(50%);
+            position: fixed;
+            right: 50%;
+            z-index: 2;
+            overflow: hidden;
+          }
+
           .dot {
             background: $white;
             border: 1px solid $blue-mid;

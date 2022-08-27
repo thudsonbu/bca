@@ -9,6 +9,7 @@ const Timeline = ({ events, title }) => {
           <div className={styles.line}>
             <div className={styles.dot}></div>
           </div>
+          <div className={styles.line_tracker}></div>
         </div>
         <div className={styles.card}>
           <h2>{e.title}</h2>
