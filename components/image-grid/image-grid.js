@@ -1,24 +1,22 @@
 import styles from "./image-grid.module.scss";
 import ArrowLink from "../arrow-link/arrow-link";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useMemo, createRef } from "react";
 import {scrollListener} from '../../utils/animations'
+import { RefreshSharp } from "@mui/icons-material";
 
 const ImageGrid = (props) => {
 
-  const ref = useRef(null);
+  const ref = useRef([]);
+  console.log(ref)
 
   useEffect(() => {
-    window.addEventListener('scroll', () => {
-      scrollListener(ref.current, 'fadeUpAnimation')
-    })
-
-    
+      window.addEventListener('scroll', () => {
+        scrollListener(ref.current, 'fadeDownAnimation')
+      })
   })
 
-  
-
-  const sections = props.items.map((item) => {
+  const sections = props.items.map((item, index) => {
     return (
       <div className={styles.row} key={item.src}>
         <div
@@ -30,7 +28,10 @@ const ImageGrid = (props) => {
             backgroundSize: "cover",
           }}
         ></div>
-        <div className={styles.description} ref={ref}>
+        <div 
+          className={styles.description} 
+          ref={ref}
+        >
           <h3>{item.title}</h3>
           <p>{item.description}</p>
           {item.link && (

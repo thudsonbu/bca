@@ -11,7 +11,7 @@ module.exports = {
   };
 
     const displayScrollElement = (element) => {
-      element.classList.add('why');
+      element.classList.add(animationClass);
     };
 
     const handleScrollAnimation = () => {
@@ -21,9 +21,7 @@ module.exports = {
         }
     }
 
-    console.log(ref.classList)
     ref.classList.remove('description');
-    console.log(ref.classList)
     handleScrollAnimation();
 
     //Need to update the state somehow 

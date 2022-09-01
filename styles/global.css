@@ -23,3 +23,59 @@ p {
 mark {
   color: #054a91;
 }
+
+.fadeUpAnimation{
+  animation: fadeUp 1s ease-in-out
+}
+
+.fadeDownAnimation{
+  animation: fadeDown 1s ease-in-out
+}
+
+.fadeLeftAnimation{
+  animation: fadeLeft 1s ease-in-out
+}
+
+.fadeLeftAnimation{
+  animation: fadeLeft 1s ease-in-out
+}
+
+@keyframes fadeLeft {
+  from {
+    opacity: 0;
+    transform: translate(20%);
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+@keyframes fadeRight {
+  from {
+    opacity: 0;
+    transform: translate(-20%);
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(-20%);
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translateY(20%);
+  }
+  to {
+    opacity: 100%;
+  }
+}
