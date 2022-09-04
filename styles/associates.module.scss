@@ -1,9 +1,10 @@
 @import "./colors.module.scss";
 
-.signup_button {
-  margin-top: 1.5em;
-  width: 8.8em;
-  height: 2em;
-  background-color: $blue-dark;
-  font-size: 2em;
+.signup_container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 2em;
+  padding-top: 5em;
 }

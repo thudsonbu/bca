@@ -2,8 +2,7 @@ import Jumbotron  from "../components/jumbotron/jumbotron";
 import IconCard   from "../components/icon-card/icon-card";
 import GroupTitle from "../components/group-title/group-title";
 import Statement  from "../components/statement/statement";
-
-import Button from "@mui/material/Button";
+import ArrowLink  from "../components/arrow-link/arrow-link";
 
 import DataUsageIcon         from "@mui/icons-material/DataUsage";
 import HowToRegIcon          from "@mui/icons-material/HowToReg";
@@ -51,13 +50,13 @@ const Freshman = () => {
             />
           </div>
         </div>
-        <div className={layout_styles.container + ' ' + layout_styles.section}>
-          <Button
-            className={associate_styles.signup_button}
-            variant="contained"
+        <div className={associate_styles.signup_container}>
+          <ArrowLink
+            href={"/bootcamp"}
+            size={"large"}
           >
-            Sign Up
-          </Button>
+            Signup
+          </ArrowLink>
         </div>
       </div>
     </>
