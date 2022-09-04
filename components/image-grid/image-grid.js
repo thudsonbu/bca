@@ -1,26 +1,32 @@
 import styles from "./image-grid.module.scss";
 import ArrowLink from "../arrow-link/arrow-link";
 
-import { useEffect, useRef, useMemo, createRef } from "react";
+import { useEffect, useRef } from "react";
 import {scrollListener} from '../../utils/animations'
-import { RefreshSharp } from "@mui/icons-material";
 
 const ImageGrid = (props) => {
-
-  const ref = useRef([]);
-  console.log(ref)
+  const refs = useRef([]);
 
   useEffect(() => {
-      window.addEventListener('scroll', () => {
-        scrollListener(ref.current, 'fadeDownAnimation')
+    window.addEventListener('scroll', () => {
+      refs.current.forEach( ref => { 
+        scrollListener( ref, 'fadeDownAnimation' );
+      });
+    });
+    return () => {
+      window.removeEventListener('scroll', () => {
+        refs.current.forEach( ref => { 
+          scrollListener( ref, 'fadeDownAnimation' );
+        });
       })
+    };
   })
 
   const sections = props.items.map((item, index) => {
     return (
       <div className={styles.row} key={item.src}>
         <div
-          className={styles.image}
+          className={styles.image }
           style={{
             backgroundImage: "url(" + item.src + ")",
             backgroundRepeat: "no-repeat",
@@ -29,8 +35,8 @@ const ImageGrid = (props) => {
           }}
         ></div>
         <div 
-          className={styles.description} 
-          ref={ref}
+          className={styles.description + ' ' + 'start-invisible' }
+          ref={el => refs.current[index] = el}
         >
           <h3>{item.title}</h3>
           <p>{item.description}</p>

@@ -24,20 +24,24 @@ mark {
   color: #054a91;
 }
 
-.fadeUpAnimation{
-  animation: fadeUp 1s ease-in-out
+.fadeUpAnimation {
+  animation: fadeUp 1s ease-in-out forwards;
 }
 
 .fadeDownAnimation{
-  animation: fadeDown 1s ease-in-out
+  animation: fadeDown 1s ease-in-out forwards;
 }
 
 .fadeLeftAnimation{
-  animation: fadeLeft 1s ease-in-out
+  animation: fadeLeft 1s ease-in-out forwards;
 }
 
 .fadeLeftAnimation{
-  animation: fadeLeft 1s ease-in-out
+  animation: fadeLeft 1s ease-in-out forwards;
+}
+
+.start-invisible {
+  opacity: 0%
 }
 
 @keyframes fadeLeft {
