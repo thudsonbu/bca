@@ -3,8 +3,7 @@ import GroupTitle     from "../components/group-title/group-title";
 import ImageStatement from "../components/image-statement/image-statement";
 import InfoLeaf       from "../components/info-leaf/info-leaf";
 import CardGrid       from "../components/card-grid/card-grid";
-
-import Button from "@mui/material/Button";
+import ArrowLink      from "../components/arrow-link/arrow-link";
 
 import GroupAddIcon          from "@mui/icons-material/GroupAdd";
 import BuildIcon             from "@mui/icons-material/Build";
@@ -15,6 +14,7 @@ import SuperVisorAccountIcon from "@mui/icons-material/SupervisorAccount";
 
 import layout_styles   from "../styles/layouts.module.scss";
 import bootcamp_styles from "../styles/bootcamp.module.scss";
+
 
 const Bootcamp = () => {
   return (
@@ -79,13 +79,13 @@ const Bootcamp = () => {
           />
         </CardGrid>
       </div>
-      <div className={layout_styles.container + ' ' + layout_styles.section}>
-        <Button
-          className={bootcamp_styles.signup_button}
-          variant="contained"
+      <div className={bootcamp_styles.signup_container}>
+        <ArrowLink
+          href={"/bootcamp"}
+          size={"large"}
         >
-          Sign Up
-        </Button>
+          Signup
+        </ArrowLink>
       </div>
     </>
   );
