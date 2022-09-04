@@ -28,11 +28,7 @@ const items = [
         link: "/bootcamp",
       },
     ],
-  },
-  {
-    title: "Clients",
-    link: "/clients",
-  },
+  }
 ];
 
 export default items;
