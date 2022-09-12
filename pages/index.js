@@ -56,7 +56,7 @@ const Home = () => {
               title: "Client Projects",
               description:
                 "As both a Bootcamp Participant and an Associate Consultant, members have the opportunity to work with real life businesses to complete probono consulting projects. These engagements allow our members to apply skills taught by BCA and expand their knowledge in a variety of business segments. ",
-              link: "./clients",
+              link: "./students",
               link_text: "Learn more",
             },
           ]}

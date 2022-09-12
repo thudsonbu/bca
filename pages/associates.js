@@ -50,15 +50,14 @@ const Freshman = () => {
             />
           </div>
         </div>
-        <div className={associate_styles.signup_container}>
-          <ArrowLink
-            href={"https://forms.office.com/r/qHQ3x5mPrH"}
-            size={"large"}
-          >
-            Already an Associate Consultant, looking to get more involved?
-            Apply to be a Project Leader!
-          </ArrowLink>
-        </div>
+        <Statement
+          text={
+            "Already an Associate Consultant, looking to get more involved? Fill out the form below to get involved with our Associate Experience!"
+          }
+          link={"https://forms.office.com/r/qHQ3x5mPrH"}
+          linkText={"Apply to be a Project Leader!"}
+          linkSize={"large"}
+        />
       </div>
     </>
   );

@@ -1,3 +1,18 @@
+@import './styles/globals.module.scss';
+
+.signup_row {
+  display: flex;
+  justify-content: space-around;
+  align-items: space-around;
+  flex-wrap: wrap;
+
+  @media (max-width: $mobile-width) {
+    margin-top: -40px;
+    height: 100px;
+    justify-content: center;
+  }
+}
+
 .signup_container {
   width: 100%;
   margin-top: 2em;

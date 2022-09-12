@@ -13,6 +13,12 @@
     padding: 1em;
     text-align: center;
   }
+
+  .link_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 @media ( min-width: $mobile-width ) {

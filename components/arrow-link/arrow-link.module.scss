@@ -1,4 +1,5 @@
 @import "../../styles/colors.module.scss";
+@import "../../styles/globals.module.scss";
 
 .arrow_link {
   display: flex;
@@ -54,10 +55,18 @@
   &.large {
     a {
       font-size: 2em;
+
+      @media (max-width: $mobile-width) {
+        font-size: 1.2em;
+      }
     }
 
     svg {
       font-size: 2em;
+
+      @media (max-width: $mobile-width) {
+        font-size: 1.2em;
+      }
     }
   }
 }
