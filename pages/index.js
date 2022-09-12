@@ -66,7 +66,7 @@ const Home = () => {
       <div className={layout_styles.section}>
         <Partners
           partners={[
-            { src: "./images/slalom.png", style: "slalom" },
+            { src: "./images/slalom-wide.png", style: "slalom" },
             { src: "./images/rsm.png", style: "rsm" },
             { src: "./images/deloitte.png", style: "deloitte" },
             { src: "./images/ey.png", style: "ey" },

@@ -11,10 +11,6 @@ import SuperVisorAccountIcon from "@mui/icons-material/SupervisorAccount";
 import layout_styles    from "../styles/layouts.module.scss";
 import associate_styles from "../styles/associates.module.scss";
 
-import { faker } from "@faker-js/faker";
-
-const paragraphs = faker.lorem.paragraphs();
-
 const Freshman = () => {
   return (
     <>
