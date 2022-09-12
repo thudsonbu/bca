@@ -81,7 +81,7 @@ const Bootcamp = () => {
       </div>
       <div className={bootcamp_styles.signup_container}>
         <ArrowLink
-          href={"https://forms.office.com/r/pWW2cAvki5  "}
+          href={"https://forms.office.com/r/pWW2cAvki5"}
           size={"large"}
         >
           Discover BCA Bootcamp Experience
