@@ -55,7 +55,8 @@ const Freshman = () => {
             href={"https://forms.office.com/r/qHQ3x5mPrH"}
             size={"large"}
           >
-            Already an Associate Consultant, looking to get more involved? Apply to be a Project Leader!
+            Already an Associate Consultant, looking to get more involved?
+            Apply to be a Project Leader!
           </ArrowLink>
         </div>
       </div>

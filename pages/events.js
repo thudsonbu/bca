@@ -3,8 +3,6 @@ import GroupTitle from "../components/group-title/group-title";
 import EventCard  from "../components/event-card/event-card";
 import CardGrid   from "../components/card-grid/card-grid";
 
-import { faker } from "@faker-js/faker";
-
 const events = [
   {
     month:  'September 2022',
@@ -25,7 +23,7 @@ const events = [
         title: 'Corporate Partnership: Slalom Consulting',
         date: 'September 27, 2pm EST (Smith 307)',
         description: 'We have partnered with Slalom, an international technology consulting firm, to provide professional expertise and mentorship to our members. At this session, you will have the chance to walk through a data analytics case with Slalom consultants and receive live feedback! This is an amazing opportunity to learn about the consulting process and experience a day in the life of a consultant.',
-        src: './images/Event3.jpg'
+        src: './images/slalom-wide.png'
       }
     ],
   },
