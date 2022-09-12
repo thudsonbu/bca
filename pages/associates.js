@@ -11,17 +11,17 @@ import SuperVisorAccountIcon from "@mui/icons-material/SupervisorAccount";
 import layout_styles    from "../styles/layouts.module.scss";
 import associate_styles from "../styles/associates.module.scss";
 
-import { faker } from "@faker-js/faker";
-
-const paragraphs = faker.lorem.paragraphs();
-
 const Freshman = () => {
   return (
     <>
       <Jumbotron title={"Associate Experience"} />
       <div className={layout_styles.section}>
         <GroupTitle title={"Overview"} />
-        <Statement text={ paragraphs }/>
+        <Statement
+          text={
+            "Top performing students from our Bootcamp program will be invited to become Associate Consultants. As an Associate, members drive client projects, direct client engagements, and attend frequent programming to prepare them for success in any industry. This programming includes direct access to our corporate partner, Slalom LLC, guest speaker events from industry professionals, interview preparation resources, and trainings!"
+          }
+        />
         <div className={layout_styles.container}>
           <div className={layout_styles.flex_grid_centered}>
             <IconCard
@@ -52,10 +52,11 @@ const Freshman = () => {
         </div>
         <div className={associate_styles.signup_container}>
           <ArrowLink
-            href={"/bootcamp"}
+            href={"https://forms.office.com/r/qHQ3x5mPrH"}
             size={"large"}
           >
-            Signup
+            Already an Associate Consultant, looking to get more involved?
+            Apply to be a Project Leader!
           </ArrowLink>
         </div>
       </div>

@@ -44,7 +44,7 @@ const Home = () => {
               link_text: "Learn more",
             },
             {
-              src: "./images/events.jpg",
+              src: "./images/presentation.jpg",
               title: "Case Competitions",
               description:
                 "BCA hosts a case competition each semester: freshman case competition in the fall, and an intercollegiate competition in the spring. These case competitions give participants valuable experience in solving complex business problems and creating final presentations for a panel of judges working in consulting.",
@@ -107,7 +107,7 @@ const Home = () => {
               link_text: "Sign Up",
             },
             {
-              src: "./images/charts.jpg",
+              src: "./images/contact.jpg",
               title: "Contact Us",
               description:
                 "Would you like to work with the BCA or schedule en event? Click the link below.",
