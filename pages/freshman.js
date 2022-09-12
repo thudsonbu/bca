@@ -16,6 +16,18 @@ const Freshman = () => {
           "The BCA Freshman Experience is a freshman’s first glimpse at the consulting industry. Freshmen enroll in our case competition and are supported through a series of five sessions that demonstrate the basics of the consulting profession. The Freshman Experience culminates in team presentations where students receive feedback from industry professionals."
         }
       />
+      <div className={freshman_styles.signup_row}>
+        <ArrowLink
+          href={"https://forms.office.com/r/7udLXGdXwW"}
+        >
+          Freshman Experience Individual Registration
+        </ArrowLink>
+        <ArrowLink
+          href={"https://forms.office.com/r/GkqJtqj2UJ"}
+        >
+          Freshman Experience Team Registration
+        </ArrowLink>
+      </div>
       <Timeline
         title={"Case Competition Timeline"}
         events={[
