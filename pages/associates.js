@@ -25,7 +25,7 @@ const Freshman = () => {
           text={
             "Top performing students from our Bootcamp program will be invited to become Associate Consultants. As an Associate, members drive client projects, direct client engagements, and attend frequent programming to prepare them for success in any industry. This programming includes direct access to our corporate partner, Slalom LLC, guest speaker events from industry professionals, interview preparation resources, and trainings!"
           }
-      />
+        />
         <div className={layout_styles.container}>
           <div className={layout_styles.flex_grid_centered}>
             <IconCard
