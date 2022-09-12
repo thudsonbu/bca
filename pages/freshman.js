@@ -59,10 +59,10 @@ const Freshman = () => {
       />
       <div className={freshman_styles.signup_container}>
         <ArrowLink
-          href={"/bootcamp"}
+          href={"https://forms.office.com/r/49ZYF00ha0"}
           size={"large"}
         >
-          Signup
+          Freshman Liaison Application
         </ArrowLink>
       </div>
     </>
