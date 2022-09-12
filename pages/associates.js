@@ -52,10 +52,10 @@ const Freshman = () => {
         </div>
         <div className={associate_styles.signup_container}>
           <ArrowLink
-            href={"/bootcamp"}
+            href={"https://forms.office.com/r/qHQ3x5mPrH"}
             size={"large"}
           >
-            Signup
+            Project Leader Application
           </ArrowLink>
         </div>
       </div>
